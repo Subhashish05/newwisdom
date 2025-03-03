@@ -1,5 +1,5 @@
 <section class="footer_form container">
-    <form action="" class="d-flex flex-wrap">
+    <form action="/footer_enquiry" method="post" class="d-flex flex-wrap">
         <div class="col-12 col-md-4 text-md-start text-center">
             <h2 class="heading">Join us <br> and stay tuned!</h2>
             <button type="submit" class="btn btn-theme my-3">
@@ -80,12 +80,12 @@
             <div class="col-8 mx-auto">
                 <h4 class="card_title">Quick Links</h4>
                 <ul>
-                    <li><a href="about" class="card_desc">About Us</a></li>
-                    <li><a href="classes" class="card_desc">Our Classes</a></li>
-                    <li><a href="teachers" class="card_desc">School Teachers</a></li>
-                    <li><a href="events" class="card_desc">Recent Events</a></li>
-                    <li><a href="news" class="card_desc">Our News</a></li>
-                    <li><a href="schedule" class="card_desc">Schedule</a></li>
+                    <li><a href="<?php echo base_url('about') ?>" class="card_desc">About Us</a></li>
+                    <li><a href="<?php echo base_url('classes') ?>" class="card_desc">Our Classes</a></li>
+                    <li><a href="<?php echo base_url('teachers') ?>" class="card_desc">School Teachers</a></li>
+                    <li><a href="<?php echo base_url('event') ?>" class="card_desc">Recent Events</a></li>
+                    <li><a href="<?php echo base_url('news') ?>" class="card_desc">Our News</a></li>
+                    <li><a href="<?php echo base_url('schedule') ?>" class="card_desc">Schedule</a></li>
                 </ul>
             </div>
         </div>
