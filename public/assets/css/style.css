@@ -56,7 +56,6 @@ button.btn-theme {
 	border: none;
 }
 .btn-theme {
-	display: block;
 	color: #fff;
 	font-size: 1.175rem;
 	font-weight: 500;
@@ -101,7 +100,7 @@ button.btn-theme {
 	color: var(--desc-color);
 	font-size: 0.875rem;
 	line-height: 1.6;
-	max-width: 75%;
+	max-width: clamp(340px, 75%, 768px);
 	margin: 0 auto;
 }
 .card_title {
@@ -145,6 +144,33 @@ button.btn-theme {
 	font-size: 0.875rem;
 	font-weight: 400;
 }
+.menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+@media (width < 786px) {
+	.menu{
+		justify-content: flex-start;
+		flex-direction: column;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: #fcbe31;
+		left: -100vw;
+		top: 0;
+		z-index: 12;
+		padding-top: 117px;
+		transition: all ease var(--transition-duration);
+	}
+	.menu.active{
+		left: 0;
+	}
+	.menu .navigation{
+		display: block;
+		margin: 0 .5rem 1.5rem;
+	}
+}
 .navigation {
 	font-size: 1.25rem;
 	color: var(--heading-color);
@@ -187,9 +213,42 @@ button.btn-theme {
 .social_media_logo:hover {
 	scale: 1.25;
 }
+.menu_btn {
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	width: 28px;
+	line-height: 54px;
+	z-index: 20;
+}
+.menu_btn > span {
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: var(--highlight);
+	margin-bottom: 5px;
+	transition: all 0.4s ease-in-out;
+}
+.menu_btn > span:last-child {
+	margin-bottom: 0;
+}
+.menu_btn.active span.bar1 {
+	transform: translateY(10px) rotate(-45deg);
+}
+.menu_btn.active span.bar2 {
+	opacity: 0;
+	visibility: hidden;
+	transform: scaleX(2);
+}
+.menu_btn.active span.bar3 {
+	transform: translateY(-8px) rotate(-135deg);
+}
 /*=========================================== Main =========================================== */
-main {
+.page_substitute {
 	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 [data-observe]{
 	opacity: 0;
@@ -255,12 +314,23 @@ main {
 .footer_form {
 	background: linear-gradient(90deg, #fdc830, #f37335);
 	background-repeat: no-repeat;
-	padding: 57px 100px 55px;
-	border-radius: 40px;
+	padding: 3.6rem 6rem;
+	border-radius: 2.5rem;
 	background-position: 0;
-	margin-bottom: -135px;
+	margin: 0 auto -8.5rem;
 	position: relative;
 	overflow: hidden;
+}
+.footer_form .heading{
+	font-size: 2.25rem;
+}
+@media (width < 768px){
+	.footer_form{
+		background: #fcbe31;
+		padding: 2.5rem 1.5rem;
+		border-radius: 1rem;
+		width: calc(100% - 2rem);
+	}
 }
 .footer_form::before {
 	content: "";

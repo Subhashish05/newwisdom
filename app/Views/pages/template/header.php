@@ -1,9 +1,9 @@
-<header class="container">
+<header class="container position-relative">
     <div class="border-bottom top_bar">
-        <a href="#">
+        <a href="<?php echo base_url() ?>">
             <img src="<?php echo base_url('/assets/img/logo.png') ?>" alt="logo" title="New Wisdom Academy" class="header_logo">
         </a>
-        <div class="d-flex">
+        <div class="d-none d-md-flex">
             <a href="tel:0123456789" class="ms-5 px-3 d-flex">
                 <i class="contact_icon fa fa-phone"></i>
                 <span class="d-flex flex-column">
@@ -38,15 +38,20 @@
                 </span>
             </a>
         </div>
+        <div class="d-md-none menu_btn" onclick="openMenu(this)">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
     </div>
-    <div class="d-flex justify-content-between py-4">
+    <div class="menu">
         <nav>
-            <a href="index" class="navigation active">Home</a>
-            <a href="about" class="navigation">About</a>
-            <a href="classes" class="navigation">Classes</a>
-            <a href="teachers" class="navigation">Teachers</a>
-            <a href="notice" class="navigation">Notice</a>
-            <a href="contact" class="navigation">Contact</a>
+            <a href="<?php echo base_url('/')?>" class="navigation <?php if ($page_name == 'home') echo 'active'?>">Home</a>
+            <a href="<?php echo base_url('/about')?>" class="navigation <?php if ($page_name == 'about') echo 'active'?>">About</a>
+            <a href="<?php echo base_url('/classes')?>" class="navigation <?php if ($page_name == 'classes') echo 'active'?>">Classes</a>
+            <a href="<?php echo base_url('/teachers')?>" class="navigation <?php if ($page_name == 'teachers') echo 'active'?>">Teachers</a>
+            <a href="<?php echo base_url('/notice')?>" class="navigation <?php if ($page_name == 'notice') echo 'active'?>">Notice</a>
+            <a href="<?php echo base_url('/contact')?>" class="navigation <?php if ($page_name == 'contact') echo 'active'?>">Contact</a>
         </nav>
         <div class="d-flex">
             <a href="#" title="facebook" class="social_media_logo">
@@ -60,4 +65,16 @@
             </a>
         </div>
     </div>
+    <script>
+        const menu = document.querySelector('.menu');
+        function openMenu(e){
+            if(e.classList[2] == 'active'){
+                e.classList.remove('active');
+                menu.classList.remove('active');
+            }else{
+                e.classList.add('active');
+                menu.classList.add('active');
+            }
+        }
+    </script>
 </header>

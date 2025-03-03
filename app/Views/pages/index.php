@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to New Wisdom Academy</title>
+    <meta name="description" content="New Wisdom Academy is a laudable initiative by the ‘Aarna-Bilvani Educational Society’ to promote quality and modern education to children of our country, especially of Ghatsila, Galudih, Jamshedpur and adjoining areas.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,14 +31,12 @@
                     <p class="main_banner_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
                         facilis natus veritatis debitis sint. Voluptatum sint porro aliquam quas, totam provident
                         molestias iusto? Magnam, tempore? Iste perferendis ut veniam deserunt.</p>
-                    <div class="text-center mt-5">
-                        <button type="button" class="btn-theme banner_btn">
-                            <i class="fa fa-right-long"></i>
-                            Enroll Today
-                        </button>
-                    </div>
+                    <button type="button" class="btn-theme banner_btn d-inline mt-5">
+                        <i class="fa fa-right-long"></i>
+                        Enroll Today
+                    </button>
                 </div>
-                <div class="col-12 col-md-5 position-relative " data-observe="zoomIn">
+                <div class="col-12 col-md-5 position-relative d-none d-md-inline" data-observe="zoomIn">
                     <div class="banner_element"></div>
                     <img src="<?php echo base_url('/assets/img/home/banner-img.png') ?>" alt="banner image">
                 </div>
@@ -54,29 +53,29 @@
             <div class="d-flex flex-wrap mt-5">
                 <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2">
-                        <img src="<?php echo base_url('/assets/img/home/icon1.png') ?>" alt="icon" class="mb-2">
-                        <h3 class="card_title">Awesome Teachers</h3>
+                        <img src="<?php echo base_url('/assets/img/home/icon1.png') ?>" alt="icon" class="mb-3">
+                        <h3 class="card_title">Smart Classrooms</h3>
                         <p class="card_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, eaque.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2">
-                        <img src="<?php echo base_url('/assets/img/home/icon2.png') ?>" alt="icon" class="mb-2">
-                        <h3 class="card_title">Goverment Certified</h3>
+                        <img src="<?php echo base_url('/assets/img/home/icon2.png') ?>" alt="icon" class="mb-3">
+                        <h3 class="card_title">Well Qualified Teachers</h3>
                         <p class="card_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, eaque.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2">
-                        <img src="<?php echo base_url('/assets/img/home/icon3.png') ?>" alt="icon" class="mb-2">
-                        <h3 class="card_title">Best Programs</h3>
+                        <img src="<?php echo base_url('/assets/img/home/icon3.png') ?>" alt="icon" class="mb-3">
+                        <h3 class="card_title">Latest Teaching Method</h3>
                         <p class="card_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, eaque.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2">
-                        <img src="<?php echo base_url('/assets/img/home/icon4.png') ?>" alt="icon" class="mb-2">
-                        <h3 class="card_title">Student Support</h3>
+                        <img src="<?php echo base_url('/assets/img/home/icon4.png') ?>" alt="icon" class="mb-3">
+                        <h3 class="card_title">Modern Infrastructure</h3>
                         <p class="card_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, eaque.</p>
                     </div>
                 </div>
@@ -86,34 +85,34 @@
         <section class="container py-50">
             <div class="masonary">
                 <div class="masonary_img1 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img1.webp')?>" alt="">
                 </div>
                 <div class="masonary_img2 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img2.webp')?>" alt="">
                 </div>
                 <div class="masonary_img3 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img3.webp')?>" alt="">
                 </div>
                 <div class="masonary_img4 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img4.webp')?>" alt="">
                 </div>
                 <div class="masonary_img5 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img5.webp')?>" alt="">
                 </div>
                 <div class="masonary_img6 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img6.webp')?>" alt="">
                 </div>
                 <div class="masonary_img7 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img7.webp')?>" alt="">
                 </div>
                 <div class="masonary_img8 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img8.webp')?>" alt="">
                 </div>
                 <div class="masonary_img9 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img9.webp')?>" alt="">
                 </div>
                 <div class="masonary_img10 " data-observe="zoomIn">
-                    <img src="" alt="">
+                    <img src="<?php echo base_url('assets/img/gallery/img10.webp')?>" alt="">
                 </div>
             </div>
         </section>
@@ -124,9 +123,9 @@
                 <p class="section_desc mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti
                     alias obcaecati! Repudiandae nulla sequi, vero non, reiciendis expedita,</p>
             </div>
-            <div class="d-flex flex-wrap mt-5">
+            <div class="d-flex flex-wrap">
                 <!-- calender -->
-                <div class="col-12 col-md-6 col-lg-5">
+                <div class="col-12 col-md-6 col-lg-5 my-4">
                     <table class="calender w-100 text-center ">
                         <thead>
                             <tr class="bg-theme text-white fw-bold">
@@ -313,7 +312,7 @@
             <div class="d-flex flex-wrap mt-3">
                 <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
                     <div>
-                        <img src="<?php echo base_url('/assets/img/home/img4.jpg')?>" alt="News article" class="news_img">
+                        <img src="<?php echo base_url('/assets/img/home/news.webp')?>" alt="News article" class="news_img">
                         <p class="event_time">01/01/2000 <i class="fa fa-newspaper text-theme ms-3"></i> By:Times Now</p>
                         <h3 class="card_title">News Heading</h3>
                         <p class="card_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam, voluptate nemo cumque placeat facere doloribus minima quo, illo dolore sint omnis harum, natus hic.</p>
@@ -324,7 +323,7 @@
                 </div>
                 <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
                     <div>
-                        <img src="<?php echo base_url('/assets/img/home/img4.jpg')?>" alt="News article" class="news_img">
+                        <img src="<?php echo base_url('/assets/img/home/news_2.webp')?>" alt="News article" class="news_img">
                         <p class="event_time">01/01/2000 <i class="fa fa-newspaper text-theme ms-3"></i> By:Times Now</p>
                         <h3 class="card_title">News Heading</h3>
                         <p class="card_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam, voluptate nemo cumque placeat facere doloribus minima quo, illo dolore sint omnis harum, natus hic.</p>
@@ -335,7 +334,7 @@
                 </div>
                 <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
                     <div>
-                        <img src="<?php echo base_url('/assets/img/home/img4.jpg')?>" alt="News article" class="news_img">
+                        <img src="<?php echo base_url('/assets/img/home/news_3.webp')?>" alt="News article" class="news_img">
                         <p class="event_time">01/01/2000 <i class="fa fa-newspaper text-theme ms-3"></i> By:Times Now</p>
                         <h3 class="card_title">News Heading</h3>
                         <p class="card_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam, voluptate nemo cumque placeat facere doloribus minima quo, illo dolore sint omnis harum, natus hic.</p>
@@ -354,7 +353,7 @@
     <script>
         slider({
             numberofsliders: 1,
-            margin: 40
+            margin: 20
         })
     </script>
 </body>

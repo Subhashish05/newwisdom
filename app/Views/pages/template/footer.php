@@ -1,22 +1,22 @@
 <section class="footer_form container">
     <form action="" class="d-flex flex-wrap">
-        <div class="col-12 col-md-4">
-            <h2 class="heading fs-2">Join us and stay tuned!</h2>
-            <button type="submit" class="btn btn-theme">
+        <div class="col-12 col-md-4 text-md-start text-center">
+            <h2 class="heading">Join us <br> and stay tuned!</h2>
+            <button type="submit" class="btn btn-theme my-3">
                 <i class="fa fa-right-long"></i>
                 Join Us
             </button>
         </div>
-        <div class="col-12 col-md-8 d-flex flex-wrap">
-            <div class="col-12 col-md-4 px-2">
+        <div class="col-12 col-md-8 d-flex flex-wrap ps-md-5">
+            <div class="col-12 mt-3 mt-md-0 col-md-4 px-2">
                 <lable for="name" class="d-none">name</lable>
                 <input type="text" name="name" id="name" placeholder="Name" class="form-control">
             </div>
-            <div class="col-12 col-md-4 px-2">
+            <div class="col-12 mt-3 mt-md-0 col-md-4 px-2">
                 <lable for="email" class="d-none">email</lable>
                 <input type="text" name="email" id="email" placeholder="E-mail" class="form-control">
             </div>
-            <div class="col-12 col-md-4 px-2">
+            <div class="col-12 mt-3 mt-md-0 col-md-4 px-2">
                 <lable for="number" class="d-none">number</lable>
                 <input type="text" name="number" id="number" placeholder="Number" class="form-control">
             </div>
@@ -31,9 +31,9 @@
 <footer>
     <div class="d-flex flex-wrap border-bottom container">
         <!-- about -->
-        <div class="col-md-3 col-6">
+        <div class="col-md-3 col-12">
             <a href="#">
-                <img src="<?php echo base_url('/assets/img/footer_logo.png') ?>" alt="New Wisdom Academy" title="New Wisdom Academy" class="img-fluid">
+                <img src="<?php echo base_url('/assets/img/logo.png') ?>" alt="New Wisdom Academy" title="New Wisdom Academy" class="img-fluid">
             </a>
             <p class="card_desc">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet a velit praesentium tempora ipsa repellat dolores doloremque, nostrum rem facilis?
@@ -41,7 +41,7 @@
         </div>
         <!-- contact details -->
         <div class="col-md-3 col-6 mt-3">
-            <a href="tel:0123456789" class="ms-5 px-3 d-flex">
+            <a href="tel:0123456789" class="ms-md-5 px-md-3 d-flex">
                 <i class="contact_icon fa fa-phone"></i>
                 <span class="d-flex flex-column">
                     <h5 class="contact_type">
@@ -52,7 +52,7 @@
                     </div>
                 </span>
             </a>
-            <span class="ms-5 px-3 d-flex">
+            <span class="ms-md-5 px-md-3 d-flex">
                 <i class="contact_icon fa-regular fa-clock"></i>
                 <span class="d-flex flex-column">
                     <h5 class="contact_type">
@@ -63,7 +63,7 @@
                     </div>
                 </span>
             </span>
-            <a href="#" class="ms-5 px-3 d-flex">
+            <a href="#" class="ms-md-5 px-md-3 d-flex">
                 <i class="contact_icon fa fa-location-dot"></i>
                 <span class="d-flex flex-column">
                     <h5 class="contact_type">
@@ -90,16 +90,16 @@
             </div>
         </div>
         <!-- google map -->
-        <div class="col-md-3 col-6">
+        <div class="col-md-3 col-12">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.5954984960745!2d86.40612090984092!3d22.6688654293513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f60350aa3c669f%3A0x173da1ba51ab8c26!2sNew%20Wisdom%20Academy!5e0!3m2!1sen!2sin!4v1739504675533!5m2!1sen!2sin"
-                width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <div class="container d-flex justify-content-between align-items-center py-2">
         <p style="font-size: 0.75rem; margin-bottom: 0;">
-            &copy; Copyrights <?php echo date('Y') ?> New Wisdom Academy All rights reserved
+            &copy; Copyrights <?php echo date('Y') ?> New Wisdom Academy All rights reserved | Developed by <a href="https://portfolio-subhashish-99.netlify.app/" class="text-decoration-underline" target="_blank">Subhashish</a>
         </p>
         <div class="d-flex">
             <a href="#" title="facebook" class="social_media_logo">

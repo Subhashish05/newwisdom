@@ -1,0 +1,11 @@
+# Ignore environment file
+.env
+
+# Ignore other sensitive or unnecessary files
+/vendor/
+/node_modules/
+/writable/logs/*
+/writable/cache/*
+/writable/debugbar/*
+/writable/session/*
+/.well-known/

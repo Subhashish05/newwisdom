@@ -6,6 +6,12 @@ class Pages extends BaseController
 {
     public function index(): string
     {
-        return view('pages/index');
+        $data['page_name'] = 'home';
+        return view('pages/index', $data);
+    }
+    public function page($page): string
+    {
+        $data['page_name'] = $page;
+        return view('pages/'. $page, $data);
     }
 }
