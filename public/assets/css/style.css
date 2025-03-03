@@ -125,6 +125,8 @@ button.btn-theme {
 	padding: 1.625rem 0;
 }
 .header_logo {
+	position: relative;
+    z-index: 20;
 	height: 4rem;
 	width: auto;
 }
