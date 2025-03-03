@@ -97,8 +97,8 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <div class="container d-flex justify-content-between align-items-center py-2">
-        <p style="font-size: 0.75rem; margin-bottom: 0;">
+    <div class="container footer_bottom">
+        <p class="mb-0">
             &copy; Copyrights <?php echo date('Y') ?> New Wisdom Academy All rights reserved | Developed by <a href="https://portfolio-subhashish-99.netlify.app/" class="text-decoration-underline" target="_blank">Subhashish</a>
         </p>
         <div class="d-flex">

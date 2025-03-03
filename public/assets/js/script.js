@@ -4,16 +4,17 @@ const Observer = new IntersectionObserver(
 			if (entry.isIntersecting) {
 				if (entry.target.getAttribute("data-observe") == "zoomIn") {
 					entry.target.classList.add("zoomIn");
-                    Observer.unobserve(entry.target);
+					Observer.unobserve(entry.target);
 				}
 				if (entry.target.getAttribute("data-observe") == "fadeIn") {
 					entry.target.classList.add("fadeIn");
-                    Observer.unobserve(entry.target);
+					Observer.unobserve(entry.target);
 				}
 				if (entry.target.getAttribute("data-observe") == "leftIn") {
 					entry.target.classList.add("leftIn");
-                    Observer.unobserve(entry.target);
+					Observer.unobserve(entry.target);
 				}
+			}else{
 			}
 		});
 	},

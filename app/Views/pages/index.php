@@ -43,7 +43,7 @@
             </div>
         </section>
         <!-- about -->
-        <section class="container py-50">
+        <section class="container py-50 px-20">
             <div class="text-center">
                 <h2 class="section_title">Welcome to <span class="text-theme">New Wisdom</span></h2>
                 <p class="section_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti alias
@@ -82,7 +82,7 @@
             </div>
         </section>
         <!-- gallery -->
-        <section class="container py-50">
+        <section class="container py-50 px-20">
             <div class="masonary">
                 <div class="masonary_img1 " data-observe="zoomIn">
                     <img src="<?php echo base_url('assets/img/gallery/img1.webp')?>" alt="">
@@ -117,7 +117,7 @@
             </div>
         </section>
         <!-- events -->
-        <section class="container py-50">
+        <section class="container py-50 px-20">
             <div class="col-12 col-md-9">
                 <h2 class="section_title event">Our Events</h2>
                 <p class="section_desc mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti
@@ -238,7 +238,7 @@
             </div>
         </section>
         <!-- testimonials -->
-        <section class="container py-50">
+        <section class="container py-50 px-20">
             <div class="text-center">
                 <h2 class="section_title">Testimonial</h2>
                 <p class="section_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti alias
@@ -301,7 +301,7 @@
             </div>
         </section>
         <!-- news -->
-        <section class="container py-50">
+        <section class="container py-50 px-20">
             <div class="col-12 col-md-8">
                 <h2 class="section_title">News Article</h2>
                 <p class="section_desc mx-0">

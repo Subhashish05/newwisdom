@@ -19,6 +19,7 @@
 	margin-bottom: 1.5rem;
 }
 .main_banner_text > span {
+	display: inline-block;
 	color: var(--theme-color);
 	position: relative;
 }
@@ -28,7 +29,7 @@
 	width: 100%;
 	height: 2px;
 	background-color: var(--theme-color);
-	bottom: -8px;
+	bottom: 0rem;
 }
 .main_banner_desc {
 	color: var(--desc-color);
@@ -50,12 +51,17 @@
         font-size: 2.5rem;
     }
     .main_title{
-        font-size: 6rem;
+		font-size: 6rem;
+		bottom: 5%;
     }
     .main_banner{
-        padding: 4rem 2rem;
+        padding: 3rem 0rem;
         text-align: center;
     }
+	.main_banner_desc {
+		text-align: justify;
+		padding: 0 1.5rem;
+	}
 }
 .banner_element {
     position: absolute;
@@ -167,6 +173,14 @@
 	border-right: 2px solid #80808080;
 	border-bottom: 2px solid #80808080;
 }
+@media (width < 768px) {
+	.calender_cell{
+		font-size: 0.75rem;
+	}
+	.calender td {
+		font-size: 0.75rem;
+	}
+}
 .calender td.not_active {
 	color: #00000099;
 }
@@ -202,7 +216,7 @@
 .event_card {
 	background-color: #fff;
 	box-shadow: 0 0 0.75rem #1557991a;
-	padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+	padding: 0.75rem 0.5rem 0.75rem 1.5rem;
 	border-radius: 1rem;
 	position: relative;
 	margin-bottom: 1rem;
@@ -286,4 +300,9 @@
 	aspect-ratio: 4/3;
 	object-fit: cover;
 	object-position: center;
+}
+@media (width < 768px) {
+	.news_img{
+		margin-top: 1rem;
+	}
 }
