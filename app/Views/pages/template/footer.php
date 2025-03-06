@@ -10,20 +10,20 @@
         <div class="col-12 col-md-8 d-flex flex-wrap ps-md-5">
             <div class="col-12 mt-3 mt-md-0 col-md-4 px-2">
                 <lable for="name" class="d-none">name</lable>
-                <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                <input type="text" name="name" id="name" placeholder="Name" class="form-control" pattern="[\w\d]{3,}" required autocomplete="true">
             </div>
             <div class="col-12 mt-3 mt-md-0 col-md-4 px-2">
                 <lable for="email" class="d-none">email</lable>
-                <input type="text" name="email" id="email" placeholder="E-mail" class="form-control">
+                <input type="email" name="email" id="email" placeholder="E-mail" class="form-control" required autocomplete="true">
             </div>
             <div class="col-12 mt-3 mt-md-0 col-md-4 px-2">
                 <lable for="number" class="d-none">number</lable>
-                <input type="text" name="number" id="number" placeholder="Number" class="form-control">
+                <input type="text" name="number" id="number" placeholder="Number" class="form-control" pattern="[0-9]{10}" required autocomplete="true">
             </div>
             <div class="col-12 mt-3 px-2">
                 <lable for="message" class="d-none">message</lable>
                 <textarea name="message" id="message" placeholder="Message" rows="2"
-                    class="form-control"></textarea>
+                    class="form-control" required></textarea>
             </div>
         </div>
     </form>
@@ -86,6 +86,7 @@
                     <li><a href="<?php echo base_url('event') ?>" class="card_desc">Recent Events</a></li>
                     <li><a href="<?php echo base_url('news') ?>" class="card_desc">Our News</a></li>
                     <li><a href="<?php echo base_url('schedule') ?>" class="card_desc">Schedule</a></li>
+                    <li><a href="<?php echo base_url('policy') ?>" class="card_desc">Policy</a></li>
                 </ul>
             </div>
         </div>

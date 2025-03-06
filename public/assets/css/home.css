@@ -11,6 +11,46 @@
 	display: flex;
 	align-items: center;
 }
+.mob_banner{
+	display: none;
+}
+@media (width < 768px) {
+	.main_banner{
+		position: relative;
+	}
+	.mob_banner{
+		position: absolute;
+		inset: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		z-index: -1;
+	}
+	.mob_banner > img{
+		position: relative;
+		flex-shrink: 0;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		z-index: -1;
+	}
+	.mob_banner > img.active{
+		z-index: 1;
+		animation: fadeOut 2000ms linear 0ms forwards;
+	}
+	@keyframes fadeOut {
+		0%{
+			opacity: 1;
+		}
+		90%{
+			opacity: 1;
+		}
+		100%{
+			opacity: 0;
+		}
+	}
+}
 .main_banner_text {
     color: var(--heading-color);
 	font-size: 4rem;
@@ -78,6 +118,54 @@
     scale: 1.1;
 }
 /*====================================== Masonary Section ======================================*/
+.gallery_preview{
+	display: none;
+}
+.gallery_preview.show{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	width: 100vw;
+	height: 100vh;
+	padding: 1.5rem;
+	background-color: #00000090;
+	backdrop-filter: blur(5px);
+	display: flex;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+.gallery_close, .gallery_preview > button{
+	cursor: pointer;
+	font-size: 1.5rem;
+	line-height: 1;
+	border-radius: 5rem;
+	padding: .5rem .7rem;
+	color: #fff;
+	background-color: var(--highlight);
+}
+.gallery_preview > div{
+	height: 2.5rem;
+}
+.gallery_preview > button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2rem;
+	border: none;
+	align-self: center;
+}
+div[data-gallery]{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 5.5rem);
+}
+[data-gallery] > img{
+	max-width: 80%;
+	height: auto;
+	max-height: 100%;
+}
 @media (width >= 768px) {
 	.masonary {
 		display: grid;
@@ -91,9 +179,11 @@
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
+		cursor: pointer;
+		box-shadow: 0 .5rem .75rem #00000038;
+		border-radius: 8px;
 	}
 	.masonary > div > img{
-		border-radius: 8px;
 		flex-shrink: 0;
 		width: auto;
 		height: 100%;
@@ -159,6 +249,20 @@
 	}
 }
 /*====================================== Calender Section ======================================*/
+.left_heading {
+	position: relative;
+}
+.left_heading::before {
+	content: "";
+	position: absolute;
+	top: -40px;
+	left: -70px;
+	width: 114px;
+	height: 108px;
+	background-image: url(../img/home/sec-bg.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
 .calender_cell {
 	padding: 0.75rem 0.5rem;
 	border: 2px solid #3d3d3d80;
@@ -198,20 +302,6 @@
 .calender td.event {
 	background: #008000;
 	color: #fff;
-}
-.event {
-	position: relative;
-}
-.event::before {
-	content: "";
-	position: absolute;
-	top: -40px;
-	left: -70px;
-	width: 114px;
-	height: 108px;
-	background-image: url(../img/home/sec-bg.png);
-	background-repeat: no-repeat;
-	z-index: -1;
 }
 .event_card {
 	background-color: #fff;

@@ -23,6 +23,10 @@ body {
 	margin: 0;
 	font-family: "Open Sans Regular";
 }
+body:has(.gallery_preview.show){
+	height: 100vh;
+	overflow: hidden;
+}
 a {
 	text-decoration: none;
 	color: currentColor;
@@ -114,7 +118,7 @@ button.btn-theme {
 .card_desc {
 	color: var(--desc-color);
 	font-size: 0.895rem;
-	line-height: 1.6;
+	line-height: 1.4;
 	text-align: left;
 }
 @media (width < 768px) {
@@ -176,7 +180,7 @@ button.btn-theme {
 		position: fixed;
 		width: 100vw;
 		height: 100vh;
-		background: #fcbe31;
+		background: #ddd;
 		left: -100vw;
 		top: 0;
 		z-index: 12;
@@ -188,7 +192,8 @@ button.btn-theme {
 	}
 	.menu .navigation {
 		display: block;
-		margin: 0 0.5rem 1.5rem;
+		font-weight: 600;
+		margin: 0 1rem 1.5rem;
 	}
 }
 .navigation {
@@ -263,6 +268,39 @@ button.btn-theme {
 }
 .menu_btn.active span.bar3 {
 	transform: translateY(-8px) rotate(-135deg);
+}
+.enrollment_form{
+	position: fixed;
+	width: clamp(340px, 50%, 500px);
+	height: 80vh;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 100%;
+	z-index: 20;
+	background-color: #fff;
+	border-radius: .75rem;
+	border: 2px solid #ddd;
+	box-shadow: 0 0 .75rem -0.25rem #135d9e83;
+	padding: 20px;
+	transition: left var(--transition-duration) ease;
+}
+.enrollment_form > form{
+	height: 80%;
+	overflow-y: scroll;
+}
+.enrollment_form > form::-webkit-scrollbar{
+	width: 4px;
+	background-color: #00000025;
+	border-radius: 8px;
+}
+.enrollment_form > form::-webkit-scrollbar-thumb{
+	width: 100%;
+	border-radius: 8px;
+	background-color: var(--highlight);
+}
+.enrollment_form.show{
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
 }
 /*=========================================== Main =========================================== */
 .page_substitute {
@@ -410,17 +448,19 @@ footer a.card_desc:hover {
 	padding-left: 1rem;
 }
 .footer_bottom{
-	background-color: #777;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.5rem 0;
 }
 .footer_bottom > p{
-	font-size: 0.5rem;
-	color: #fff;
+	font-size: .75rem;
+	color: var(--desc-color);
 }
 @media (width < 768px) {
+	footer a.card_desc {
+		font-size: 1rem;
+	}
 	.footer_bottom{
 		flex-direction: column-reverse;
 	}
