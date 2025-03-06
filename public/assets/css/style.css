@@ -271,7 +271,7 @@ button.btn-theme {
 }
 .enrollment_form{
 	position: fixed;
-	width: clamp(340px, 50%, 500px);
+	width: clamp(350px, 75%, 500px);
 	height: 80vh;
 	top: 50%;
 	transform: translateY(-50%);
@@ -281,21 +281,21 @@ button.btn-theme {
 	border-radius: .75rem;
 	border: 2px solid #ddd;
 	box-shadow: 0 0 .75rem -0.25rem #135d9e83;
-	padding: 20px;
+	padding: 1.25rem;
 	transition: left var(--transition-duration) ease;
 }
 .enrollment_form > form{
-	height: 80%;
+	height: 85%;
 	overflow-y: scroll;
 }
 .enrollment_form > form::-webkit-scrollbar{
-	width: 4px;
+	width: .25rem;
 	background-color: #00000025;
-	border-radius: 8px;
+	border-radius: .5rem;
 }
 .enrollment_form > form::-webkit-scrollbar-thumb{
 	width: 100%;
-	border-radius: 8px;
+	border-radius: .5rem;
 	background-color: var(--highlight);
 }
 .enrollment_form.show{

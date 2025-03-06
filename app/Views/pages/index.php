@@ -45,7 +45,7 @@
                         Shaping Futures with <span>Excellence!</span>
                     </h2>
                     <p class="main_banner_desc">
-                    A place where young minds grow, dreams soar, and excellence thrives! New Wisdom Academy, run by the Aarna-Bilvani Educational Society, follows the CBSE pattern, blending academics with real-world skills. With a spacious campus, modern sports facilities, and dedicated teachers, we ensure every child shines. Plus, our affordable transport makes quality education accessible to all!
+                    Where wisdom meets excellence! At New Wisdom Academy, we nurture young minds with top-notch academics, smart classrooms, and modern facilities. With expert teachers and a student-focused approach, we shape bright futures. Enroll today and watch your child thrive!
                     </p>
                     <button type="button" class="btn-theme banner_btn d-inline mt-5" onclick="openEnroll()">
                         <i class="fa fa-right-long"></i>
@@ -62,9 +62,9 @@
         <section class="container py-50 px-20">
             <div class="text-center">
                 <h2 class="section_title">Welcome to <span class="text-theme">New Wisdom</span></h2>
-                <p class="section_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti alias
-                    obcaecati! Repudiandae nulla sequi, vero non, reiciendis expedita, doloremque laboriosam nostrum
-                    saepe aperiam est!</p>
+                <p class="section_desc">
+                    A place where young minds grow, dreams soar, and excellence thrives! New Wisdom Academy, run by the Aarna-Bilvani Educational Society, follows the CBSE pattern, blending academics with real-world skills. With a spacious campus, modern sports facilities, and dedicated teachers, we ensure every child shines. Plus, our affordable transport makes quality education accessible to all!
+                </p>
             </div>
             <div class="d-flex flex-wrap mt-5">
                 <div class="col-12 col-md-3 p-3" data-observe="fadeIn">

@@ -141,7 +141,7 @@
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="agreement" required>
-            <label class="form-check-label text-secondary" for="agreement"><small>I agree to the school policies</small></label>
+            <label class="form-check-label text-secondary" for="agreement"><small>I agree to the school <a href="policy" target="_blank" class="text-decoration-underline">policies</a>.</small></label>
         </div>
         <div class="d-flex mt-4 justify-content-around">
             <button type="reset" class="btn btn-danger w-25" onclick="closeEnroll()">Cancel</button>

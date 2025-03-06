@@ -223,6 +223,10 @@ div[data-gallery]{
 	}
 }
 @media (width < 768px) {
+	div[data-gallery]{
+		height: calc(100vh - 10rem);
+		width: 75%;
+	}
 	.masonary {
 		display: flex;
 		flex-wrap: wrap;
