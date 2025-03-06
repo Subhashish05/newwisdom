@@ -271,7 +271,7 @@ button.btn-theme {
 }
 .enrollment_form{
 	position: fixed;
-	width: clamp(350px, 75%, 500px);
+	width: clamp(350px, 95%, 500px);
 	height: 80vh;
 	top: 50%;
 	transform: translateY(-50%);

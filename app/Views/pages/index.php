@@ -25,20 +25,32 @@
             <h2 class="main_title">Wisdom</h2>
             <div class="main_banner container">
                 <div class="mob_banner">
-                    <img src="" alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner1.webp')?>" data-mob_banner_index="1">
-                    <img src="" alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner2.webp')?>" data-mob_banner_index="2">
-                    <img src="" alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner3.webp')?>" data-mob_banner_index="3">
+                    <img src=" " alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner1.webp')?>" data-mob_banner_index="1" class="active">
+                    <img src=" " alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner2.webp')?>" data-mob_banner_index="2">
+                    <img src=" " alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner3.webp')?>" data-mob_banner_index="3">
                 </div>
                 <script>
-                    let current_mob_banner = 1;
-                    function mob_banner(e){
-                        if(current_mob_banner > 3) current_mob_banner = 1;
-                        let banner = document.querySelector(`[data-mob_banner_index="${current_mob_banner}"]`)
-                        banner.src = banner.getAttribute('data-src');
-                        current_mob_banner++;
+                    let crt_bnr = 1;
+                    let nxt_bnr = crt_bnr + 1;
+                    const mob_banners = document.querySelectorAll('[data-mob_banner_index]');
+                    function mob_banner(cb, nb){                        
+                        let banner = document.querySelector(`[data-mob_banner_index="${cb}"]`)
+                        let nxt_banner = document.querySelector(`[data-mob_banner_index="${nb}"]`)
+                        if(banner.src == '<?php echo base_url() ?>') banner.src = banner.getAttribute('data-src');
+                        if(nxt_banner.src == '<?php echo base_url() ?>') nxt_banner.src = nxt_banner.getAttribute('data-src');
+                        mob_banners.forEach((e) => {e.classList.remove('active','next')});
+                        banner.classList.add('active');
+                        nxt_banner.classList.add('next');
                         return;
                     }
-                    setInterval(mob_banner(),2000);
+                    mob_banner(1, 2);
+                    setInterval(() =>{
+                        crt_bnr++;
+                        if(crt_bnr > 3) crt_bnr = 1;
+                        nxt_bnr = crt_bnr + 1;
+                        if(nxt_bnr > 3) nxt_bnr = 1
+                        mob_banner(crt_bnr, nxt_bnr);
+                    },5000);
                 </script>
                 <div class="col-12 col-md-7" data-observe="leftIn">
                     <h2 class="main_banner_text">
