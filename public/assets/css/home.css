@@ -22,12 +22,13 @@
 		justify-content: center;
 		overflow: hidden;
 		z-index: -1;
+		height: 100%;
 	}
 	.mob_banner > img{
 		grid-area: stack;
 		position: relative;
 		width: auto;
-		height: 50%;
+		height: 65%;
 		opacity: 0;
 		object-fit: cover;
 		z-index: 0;
@@ -71,8 +72,9 @@
 	bottom: 0rem;
 }
 .main_banner_desc {
-	color: #000;
-	font-size: 0.9rem;
+	color: #333;
+	font-size: 1.25rem;
+	letter-spacing: 1px;
 	line-height: 1.3;
 }
 .main_title {
@@ -88,6 +90,7 @@
 @media (width < 768px) {
     .main_banner_text {
         font-size: 2.5rem;
+		color: #fff;
     }
     .main_title{
 		font-size: 6rem;
@@ -96,11 +99,12 @@
     .main_banner{
         padding: 3rem 0rem;
         text-align: center;
-		--bgc: #ffffff70;
+		--bgc: #00000099;
 		background-image: linear-gradient(0deg, var(--bgc), var(--bgc));
     }
 	.main_banner_desc {
 		text-align: justify;
+		color: #ddd;
 		padding: 0 1.5rem;
 	}
 }

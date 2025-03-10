@@ -10,6 +10,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
+    <link rel="stylesheet" href="<?php echo base_url('/assets/css/OpenSans-Regular.ttf') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('/assets/css/Poppins-Regular.ttf') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/slider.css') ?>">
@@ -54,12 +56,12 @@
                 </script>
                 <div class="col-12 col-md-7" data-observe="leftIn">
                     <h2 class="main_banner_text">
-                        Shaping Futures with <span>Excellence!</span>
+                        Shaping Futures with <span>Wisdom & Excellence</span>
                     </h2>
                     <p class="main_banner_desc">
                     Where wisdom meets excellence! At New Wisdom Academy, we nurture young minds with top-notch academics, smart classrooms, and modern facilities. With expert teachers and a student-focused approach, we shape bright futures. Enroll today and watch your child thrive!
                     </p>
-                    <button type="button" class="btn-theme banner_btn d-inline mt-5" onclick="openEnroll()">
+                    <button type="button" class="btn-theme banner_btn d-inline my-5" onclick="openEnroll()">
                         <i class="fa fa-right-long"></i>
                         Enroll Today
                     </button>
@@ -79,29 +81,29 @@
                 </p>
             </div>
             <div class="d-flex flex-wrap mt-5">
-                <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2">
+                <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
+                    <div class="text-center shadow p-3 rounded-2 h-100">
                         <img src="<?php echo base_url('/assets/img/home/icon1.png') ?>" alt="icon" class="mb-3">
                         <h3 class="card_title">Smart Classrooms</h3>
                         <p class="card_desc"> Interactive and tech-enabled for an engaging learning environment.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2">
+                <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
+                    <div class="text-center shadow p-3 rounded-2 h-100">
                         <img src="<?php echo base_url('/assets/img/home/icon2.png') ?>" alt="icon" class="mb-3">
                         <h3 class="card_title">Well Qualified Teachers</h3>
                         <p class="card_desc">Experienced educators dedicated to shaping bright futures.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2">
+                <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
+                    <div class="text-center shadow p-3 rounded-2 h-100">
                         <img src="<?php echo base_url('/assets/img/home/icon3.png') ?>" alt="icon" class="mb-3">
                         <h3 class="card_title">Latest Teaching Method</h3>
                         <p class="card_desc">Innovative, student-centric approaches for effective learning.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 p-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2">
+                <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
+                    <div class="text-center shadow p-3 rounded-2 h-100">
                         <img src="<?php echo base_url('/assets/img/home/icon4.png') ?>" alt="icon" class="mb-3">
                         <h3 class="card_title">Modern Infrastructure</h3>
                         <p class="card_desc">A well-equipped campus designed for comfort and excellence.</p>

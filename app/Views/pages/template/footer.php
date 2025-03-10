@@ -98,8 +98,8 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <div class="container footer_bottom">
-        <p class="mb-0">
+    <div class="container footer_bottom px-2">
+        <p class="mb-0 text-center">
             &copy; Copyrights <?php echo date('Y') ?> New Wisdom Academy All rights reserved | Developed by <a href="https://portfolio-subhashish-99.netlify.app/" class="text-decoration-underline" target="_blank">Subhashish</a>
         </p>
         <div class="d-flex">
