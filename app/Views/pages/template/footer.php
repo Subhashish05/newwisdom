@@ -84,7 +84,7 @@
                     <li><a href="<?php echo base_url('classes') ?>" class="card_desc">Our Classes</a></li>
                     <li><a href="<?php echo base_url('teachers') ?>" class="card_desc">School Teachers</a></li>
                     <li><a href="<?php echo base_url('event') ?>" class="card_desc">Recent Events</a></li>
-                    <li><a href="<?php echo base_url('news') ?>" class="card_desc">Our News</a></li>
+                    <li><a href="<?php echo base_url('gallery') ?>" class="card_desc">Our Gallery</a></li>
                     <li><a href="<?php echo base_url('schedule') ?>" class="card_desc">Schedule</a></li>
                     <li><a href="<?php echo base_url('policy') ?>" class="card_desc">Policy</a></li>
                 </ul>

@@ -28,7 +28,7 @@
 		grid-area: stack;
 		position: relative;
 		width: auto;
-		height: 65%;
+		height: 70%;
 		opacity: 0;
 		object-fit: cover;
 		z-index: 0;
@@ -59,7 +59,6 @@
 	margin-bottom: 1.5rem;
 }
 .main_banner_text > span {
-	display: inline-block;
 	color: var(--theme-color);
 	position: relative;
 }
@@ -67,7 +66,7 @@
     content: "";
 	position: absolute;
 	width: 100%;
-	height: 2px;
+    height: 2px;
 	background-color: var(--theme-color);
 	bottom: 0rem;
 }
@@ -332,8 +331,9 @@ div[data-gallery]{
 }
 .event_time {
 	color: var(--desc-color);
-	font-size: 0.875rem;
-	margin-bottom: 0.25rem;
+	font-size: 1rem;
+	margin-bottom: 0rem;
+	text-align: right;
 }
 @media (width >= 768px) {
     .event_card:nth-child(3) {
@@ -355,7 +355,8 @@ div[data-gallery]{
 .testimonial {
 	color: var(--heading-color);
 	font-size: 1.175rem;
-	font-weight: 600;
+	font-weight: 500;
+	font-style: italic;
 	line-height: 1.5;
 	margin-bottom: 1.25rem;
 }
@@ -366,7 +367,7 @@ div[data-gallery]{
 }
 .test_name {
 	color: var(--desc-color);
-	font-size: 0.89rem;
+	font-size: 1rem;
 	font-weight: 600;
 	margin-bottom: 0.5rem;
 	text-transform: capitalize;
@@ -389,16 +390,19 @@ div[data-gallery]{
 	display: block;
 	color: var(--theme-color);
 	font-size: 0.75rem;
-	font-style: italic;
 	position: relative;
 	z-index: 9;
 }
 .news_img {
-	border-radius: 1rem;
+	border-radius: .25rem;
 	width: 100%;
-	aspect-ratio: 4/3;
+	aspect-ratio: 16/9;
 	object-fit: cover;
 	object-position: center;
+}
+.news_img + .card_title{
+	font-size: 1.25rem;
+	font-weight: 600;
 }
 @media (width < 768px) {
 	.news_img{

@@ -10,3 +10,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', [Pages::class, 'index']);
 $routes->post('/footer_enquiry', [Backend::class, 'footer_enquiry']);
 $routes->get('/(:segment)', [Pages::class, 'page/$1']);
+$routes->get('/news/(:segment)', [Pages::class, 'news/$1']);

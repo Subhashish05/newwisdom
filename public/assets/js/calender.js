@@ -10,52 +10,22 @@ let newMonth = month;
 
 const Events = [
 	{
-		d: 25,
-		m: 8,
-		y: 2024,
-		descritpion: "IMPORTANT NOTICE UPDATED PAYMENT METHODS FOR SCHOOL FEES",
-	},
-	{
-		d: 9,
-		m: 5,
-		y: 2024,
-		descritpion: "CBSE Results User Guide 2024",
-	},
-	{
-		d: 29,
-		m: 4,
-		y: 2024,
-		descritpion: "School suspended for Pre-Nur to VIII",
-	},
-	{
-		d: 25,
-		m: 4,
-		y: 2024,
-		descritpion: "Class XI Scholarship 2024-25",
-	},
-	{
-		d: 10,
+		d: 14,
 		m: 1,
-		y: 2024,
-		descritpion: "Admission Guidelines 2024-25",
+		y: 2025,
+		descritpion: "Makar Sankranti",
 	},
 	{
-		d: 22,
-		m: 12,
-		y: 2023,
-		descritpion: "Admission Notice 2024-2025",
+		d: 26,
+		m: 1,
+		y: 2025,
+		descritpion: "Republic Day",
 	},
 	{
-		d: 22,
-		m: 7,
-		y: 2023,
-		descritpion: "ROAD SAFETY",
-	},
-	{
-		d: 8,
-		m: 4,
-		y: 2022,
-		descritpion: "Student Safety Notice",
+		d: 2,
+		m: 2,
+		y: 2025,
+		descritpion: "Basant Panchami",
 	},
 ];
 function getMonth(num) {
