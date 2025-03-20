@@ -16,9 +16,17 @@
         .mission_para {
             color: var(--desc-color);
             font-size: 1.05rem;
-            line-height: 1.6;
+            line-height: 1.5;
+            text-align: justify;
         }
-
+        .mission_para::first-letter{
+            color: var(--highlight);
+            font-size: 5rem;
+            line-height: 3rem;
+            margin-right: 0.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            float: left;
+        }
         .section_desc2 {
             font-size: 1.05rem;
             max-width: 100%;
@@ -41,8 +49,8 @@
                 <h2 class="text-center section_title mb-3 mt-5">
                     Our <span class="text-theme">Mission</span>
                 </h2>
-                <p class="mission_para">
-                    <img src="<?php echo base_url('assets/img/about/mission_banner.webp') ?>" alt="school image" class="col-12 col-md-4 mx-3 mt-2 float-start clearfix">
+                <p class="mission_para clear-fix">
+                    <img src="<?php echo base_url('assets/img/about/mission_banner.webp') ?>" alt="school image" class="col-12 col-md-5 mx-3 mt-2 float-end clearfix">
                     At New Wisdom Academy, our mission is to provide a well-rounded education that nurtures intellectual curiosity, critical thinking, and a passion for lifelong learning. We believe that every child has the potential to achieve greatness, and our role is to create an environment that supports their academic, emotional, and personal growth.
                     Our curriculum is designed to blend strong academic foundations with practical knowledge, fostering a culture of innovation, leadership, and creativity. Beyond textbooks and traditional learning, we emphasize experiential learning, allowing students to engage in real-world applications of their studies.
                     In today’s fast-evolving world, education is more than just scoring good marks. We equip our students with 21st-century skills, including problem-solving, communication, teamwork, and adaptability. We integrate technology into our teaching methodologies, ensuring that our students are not just learners but also future leaders in their respective fields.
@@ -56,13 +64,13 @@
                 </h2>
                 <div class="col-12 col-md-6">
                     <ul class="section_desc2">
-                        <li><strong>Highly Qualified & Dedicated Teachers:</strong> Our experienced mentors inspire and guide students towards academic success and personal growth.</li>
-                        <li><strong>Innovative & Creative Learning Methods:</strong> We incorporate practical lessons, hands-on experiments, and real-world applications for better understanding.</li>
-                        <li><strong>Active & Experiential Learning:</strong> Outdoor learning, group discussions, and scientific experiments make education interactive.</li>
-                        <li><strong>Best-In-Class Infrastructure & Facilities:</strong> Modern classrooms, libraries, labs, and activity spaces ensure a comprehensive learning environment.</li>
-                        <li><strong>Safe, Green & Peaceful Campus:</strong> Our pollution-free location provides a serene atmosphere that enhances learning and well-being.</li>
-                        <li><strong>Comprehensive Sports & Fitness Training:</strong> We offer both indoor and outdoor sports with expert coaching.</li>
-                        <li><strong>Personalized Attention & Small Class Sizes:</strong> Individual guidance ensures that each student gets the support they need.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Highly Qualified & Dedicated Teachers:</b> Our experienced mentors inspire and guide students towards academic success and personal growth.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Innovative & Creative Learning Methods:</b> We incorporate practical lessons, hands-on experiments, and real-world applications for better understanding.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Active & Experiential Learning:</b> Outdoor learning, group discussions, and scientific experiments make education interactive.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Best-In-Class Infrastructure & Facilities:</b> Modern classrooms, libraries, labs, and activity spaces ensure a comprehensive learning environment.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Safe, Green & Peaceful Campus:</b> Our pollution-free location provides a serene atmosphere that enhances learning and well-being.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Comprehensive Sports & Fitness Training:</b> We offer both indoor and outdoor sports with expert coaching.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Personalized Attention & Small Class Sizes:</b> Individual guidance ensures that each student gets the support they need.</li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 px-3">
@@ -78,11 +86,11 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <ul class="section_desc2">
-                        <li><b>Transport Service:</b> We provide reasonably priced transportation to reach every corner, ensuring education is accessible to all.</li>
-                        <li><b>Sports Training:</b> Following the CBSE pattern, we offer both indoor and outdoor sports facilities with expert trainers to encourage competitiveness.</li>
-                        <li><b>Music Training:</b> Recognizing unique talents, we provide training in classical and western dance and music forms for holistic development.</li>
-                        <li><b>Outing Service:</b> We organize educational tours to museums and scientific parks, turning theoretical learning into live experiences.</li>
-                        <li><b>Language Courses:</b> Focusing on English communication skills, we prepare students for interviews, seminars, and standing out in the crowd.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Transport Service:</b> We provide reasonably priced transportation to reach every corner, ensuring education is accessible to all.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Sports Training:</b> Following the CBSE pattern, we offer both indoor and outdoor sports facilities with expert trainers to encourage competitiveness.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Music Training:</b> Recognizing unique talents, we provide training in classical and western dance and music forms for holistic development.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Outing Service:</b> We organize educational tours to museums and scientific parks, turning theoretical learning into live experiences.</li>
+                        <li class="mb-3 lh-sm"><b class="text-highlight">Language Courses:</b> Focusing on English communication skills, we prepare students for interviews, seminars, and standing out in the crowd.</li>
                     </ul>
                 </div>
                 <p class="my-5 text-center fw-bold heading section_desc">

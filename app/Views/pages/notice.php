@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css') ?>">
     <style>
         .notice {
-            background: #e4e4e4;
+            background: #ecf7ff;
             padding: 15px;
             margin: 10px 0;
             border-radius: .5rem;
             overflow: hidden;
-            border-left: 5px solid var(--highlight);
+            border-left: 5px solid var(--theme-color);
         }
         .notice h2 {
-            color: #333;
+            color: var(--highlight);
             margin: 0 0 10px;
         }
         .notice p {

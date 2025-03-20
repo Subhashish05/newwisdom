@@ -29,7 +29,7 @@
         }
         .contact-info div {
             flex-basis: 30%;
-            background: #e4e4e4;
+            background: #b6e6ad;
             padding: 20px;
             border-radius: 8px;
         }
@@ -39,21 +39,25 @@
         }
         .contact-info p {
             text-align: center;
-            color: #666;
+            color: var(--desc-color);
         }
         .contact-form {
-            background: #e4e4e4;
+            background: #b6e6ad;
             padding: 20px;
             border-radius: 8px;
             margin-top: 20px;
         }
         .contact-form label {
             display: block;
+            color: rgba(51, 51, 51, 0.86);
+            font-style: italic;
+            padding-left: .5rem;
             margin: 10px 0 5px;
         }
         .contact-form input, .contact-form textarea {
             width: 100%;
             padding: 10px;
+            background-color: #ffffff70;
             margin-bottom: 10px;
             border: none;
             border-radius: 5px;
@@ -88,11 +92,11 @@
                 </div>
                 <div>
                     <h2>Phone</h2>
-                    <p>+91-70222 55417</p>
+                    <p><a href="tel:+917022255417">+91-70222 55417</a></p>
                 </div>
                 <div>
                     <h2>Email</h2>
-                    <p>info.wisdomacademy@gmail.com</p>
+                    <p><a href="mailto:info.wisdomacademy@gmail.com">info.wisdomacademy@gmail.com</a></p>
                 </div>
             </div>
             <div class="d-flex flex-wrap">
@@ -109,8 +113,7 @@
                         <label for="number">Number:</label>
                         <input type="text" id="number" name="number" required>    
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="1" required></textarea>
-    
+                        <textarea id="message" name="message" rows="1" required></textarea>    
                         <button type="submit">Send Us a Message</button>
                     </form>
                 </div>

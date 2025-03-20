@@ -5,7 +5,7 @@
 	--animation-duration: 1000ms;
 	--heading-font: "Poppins", sans-serif;
 	--heading-color: #2b2b2b;
-	--desc-color: #575757;
+	--desc-color: #000000aa;
 }
 @font-face {
 	font-family: "Open Sans Regular";
@@ -23,7 +23,8 @@ body {
 	margin: 0;
 	font-family: "Open Sans Regular";
 }
-body:has(.gallery_preview.show){
+body:has(.gallery_preview.show),
+body:has(.enrollment_form.show){
 	height: 100vh;
 	overflow: hidden;
 }
@@ -52,6 +53,9 @@ h3 {
 }
 .text-highlight {
 	color: var(--highlight) !important;
+}
+.text-justify{
+	text-align: justify !important;
 }
 .bg-theme {
 	background-color: var(--theme-color);
@@ -109,7 +113,7 @@ button.btn-theme {
 }
 .card_title {
 	color: var(--heading-color);
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 	font-weight: 500;
 	text-transform: capitalize;
 	margin-bottom: 0.5rem;
@@ -117,7 +121,7 @@ button.btn-theme {
 }
 .card_desc {
 	color: var(--desc-color);
-	font-size: 0.895rem;
+	font-size: 0.875rem;
 	line-height: 1.4;
 	text-align: left;
 }
@@ -304,7 +308,7 @@ button.btn-theme {
 }
 /*=========================================== Main =========================================== */
 .hero_section{
-	background-color: #00000077;
+	background-color: #ffefe6;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -317,7 +321,7 @@ button.btn-theme {
 	margin-bottom: 2rem;
 }
 .hero_section *{
-	color: #fff;
+	color: var(--theme-color);
 	text-align: center;
 }
 .page_substitute {

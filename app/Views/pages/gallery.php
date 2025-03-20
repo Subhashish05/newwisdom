@@ -17,9 +17,25 @@
 <body>
     <?php include 'template/header.php'; ?>
     <main>
-        <div class="page_substitute">
-            <h1 class="heading display-1"><?php echo ucfirst($page_name)?></h1>
-        </div>
+        <section class="hero_section">
+            <h1 class="section_title">Moments Captured Perfectly</h1>
+        </section>
+        <section class="container d-flex flex-wrap my-5">
+            <?php 
+                $i = 1;
+                while ($i <= 10) {
+                    echo '
+                    <div class="col-6 col-md-3 p-3">
+                        <div class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-25 h-100 rounded-2 overflow-hidden">
+                            <img src="'.base_url('assets/img/gallery/img'.$i.'.webp').'" alt="gallery" class="img-fluid">
+                        </div>
+                    </div>
+                    ';
+                    $i++;
+                }
+            ?>
+            
+        </section>
     </main>
     <?php include 'template/footer.php'; ?>
     <script src="<?php echo base_url('/assets/js/script.js') ?>"></script>

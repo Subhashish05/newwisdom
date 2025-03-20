@@ -20,7 +20,7 @@
             margin-top: 20px;
         }
         .teacher-card {
-            background: #fff;
+            background-color:rgb(239, 225, 255);
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -31,15 +31,15 @@
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #ddd;
+            border: 2px solid #999;
         }
         .teacher-card h3 {
             font-size: 1.25rem;
             margin: 10px 0 5px;
-            color: #333;
+            color: #4A148C;
         }
         .teacher-card p {
-            color: #777;
+            color: #00000070;
             font-size: 14px;
         }
     </style>

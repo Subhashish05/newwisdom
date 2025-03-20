@@ -273,6 +273,7 @@ div[data-gallery]{
 }
 .calender_cell {
 	padding: 0.75rem 0.5rem;
+	background-color: #0000001e;
 	border: 2px solid #3d3d3d80;
 }
 .calender > thead > tr.bg-theme {
@@ -297,22 +298,22 @@ div[data-gallery]{
 	color: #00000099;
 }
 .calender td:hover {
-	background: var(--theme-color);
-	color: #fff;
+	background: #ffefe6;
+	color: var(--theme-color);
 }
 .calender td:first-child {
 	border-left: 2px solid #80808080;
 }
 .calender td.active {
-	background: var(--highlight);
-	color: #fff;
+	background: #daebfa;
+	color: var(--highlight);
 }
 .calender td.event {
-	background: #008000;
-	color: #fff;
+	background: #e4ffe4;
+	color: #008000;
 }
 .event_card {
-	background-color: #fff;
+	background-color: #eef7ff;
 	box-shadow: 0 0 0.75rem #1557991a;
 	padding: 0.75rem 0.5rem 0.75rem 1.5rem;
 	border-radius: 1rem;
@@ -329,6 +330,9 @@ div[data-gallery]{
 	left: 0;
 	background-image: linear-gradient(15deg, #f37335, #fdc830);
 }
+.event_card > .card_title{
+	color: var(--highlight);
+}
 .event_time {
 	color: var(--desc-color);
 	font-size: 1rem;
@@ -336,9 +340,12 @@ div[data-gallery]{
 	text-align: right;
 }
 @media (width >= 768px) {
-    .event_card:nth-child(3) {
+    .event_card:nth-child(2) {
         left: -2rem;
     }
+}
+.slides{
+	background-color: #daffda;
 }
 @media (width < 768px) {
     .event_card > .card_desc{
@@ -353,12 +360,10 @@ div[data-gallery]{
     }
 }
 .testimonial {
-	color: var(--heading-color);
-	font-size: 1.175rem;
-	font-weight: 500;
-	font-style: italic;
+	color: #2da32d;
+	font-size: 1.25rem;
 	line-height: 1.5;
-	margin-bottom: 1.25rem;
+	margin: 2.5rem 0 1.25rem;
 }
 @media (width < 768px) {
     .testimonial{
@@ -393,6 +398,7 @@ div[data-gallery]{
 	position: relative;
 	z-index: 9;
 }
+/*====================================== News Section ======================================*/
 .news_img {
 	border-radius: .25rem;
 	width: 100%;
@@ -401,7 +407,8 @@ div[data-gallery]{
 	object-position: center;
 }
 .news_img + .card_title{
-	font-size: 1.25rem;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.35rem;
 	font-weight: 600;
 }
 @media (width < 768px) {

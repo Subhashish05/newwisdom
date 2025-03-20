@@ -59,7 +59,7 @@
                 </script>
                 <div class="col-12 col-md-7" data-observe="leftIn">
                     <h2 class="main_banner_text">
-                        Shaping Futures with <span>Wisdom & Excellence</span>
+                        Shaping Futures with <span>Wisdom</span> & <span>Excellence</span>
                     </h2>
                     <p class="main_banner_desc">
                         Where wisdom meets excellence! At New Wisdom Academy, we nurture young minds with top-notch academics, smart classrooms, and modern facilities. With expert teachers and a student-focused approach, we shape bright futures. Enroll today and watch your child thrive!
@@ -85,30 +85,30 @@
             </div>
             <div class="d-flex flex-wrap mt-5">
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #ffefe6;">
                         <img src="<?php echo base_url('/assets/img/home/icon1.png') ?>" alt="icon" class="mb-3">
-                        <h3 class="card_title">Smart Classrooms</h3>
+                        <h3 class="card_title text-theme">Smart Classrooms</h3>
                         <p class="card_desc"> Interactive and tech-enabled for an engaging learning environment.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #eef7ff;">
                         <img src="<?php echo base_url('/assets/img/home/icon2.png') ?>" alt="icon" class="mb-3">
-                        <h3 class="card_title">Well Qualified Teachers</h3>
+                        <h3 class="card_title text-highlight">Well Qualified Teachers</h3>
                         <p class="card_desc">Experienced educators dedicated to shaping bright futures.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #ffefe6;">
                         <img src="<?php echo base_url('/assets/img/home/icon3.png') ?>" alt="icon" class="mb-3">
-                        <h3 class="card_title">Latest Teaching Method</h3>
+                        <h3 class="card_title text-theme">Latest Teaching Method</h3>
                         <p class="card_desc">Innovative, student-centric approaches for effective learning.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #eef7ff;">
                         <img src="<?php echo base_url('/assets/img/home/icon4.png') ?>" alt="icon" class="mb-3">
-                        <h3 class="card_title">Modern Infrastructure</h3>
+                        <h3 class="card_title text-highlight">Modern Infrastructure</h3>
                         <p class="card_desc">A well-equipped campus designed for comfort and excellence.</p>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th class="calender_cell">SUN</th>
+                                <th class="calender_cell bg-danger bg-opacity-25 text-danger">SUN</th>
                                 <th class="calender_cell">MON</th>
                                 <th class="calender_cell">TUS</th>
                                 <th class="calender_cell">WEB</th>

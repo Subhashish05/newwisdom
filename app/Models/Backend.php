@@ -11,6 +11,10 @@ class Backend extends Model{
     }
     public function getTopNews() {
         $db = db_connect();
-        return $db->query('select * from news LIMIT 3')->getResult('array');
+        return $db->query('select * from news ORDER BY date ASC LIMIT 3')->getResult('array');
+    }
+    public function getAllNews($offset) {
+        $db = db_connect();
+        return $db->query('select * from news ORDER BY date ASC LIMIT 6 OFFSET '.$offset)->getResult('array');
     }
 }
