@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css') ?>">
     <style>
-        ul{
+        .container > ul{
             list-style-type: square;
             margin-bottom: 1rem;
             padding-left: 2rem;

@@ -81,71 +81,69 @@
     </script>
 </header>
 <div class="enrollment_form">
-    <h3 class="text-center mb-4 heading text-theme">School Enrollment Form</h3>
+    <div class="position-fixed top-0 end-0 btn" onclick="closeEnroll()">
+        <i class="fa fa-xmark fs-4"></i>
+    </div>
+    <h3 class="text-center mb-3 heading text-theme">School Enrollment Form</h3>
     <form action="/enrollment-form" method="post" enctype="multipart/form-data">
-        <div class="mb-3 px-2">
-            <label for="name" class="form-label text-secondary ps-2 mb-0 heading">Full Name</label>
+        <div class="mb-3 px-2 position-relative">
+            <label for="name" class="enroll_form_label">Full Name</label>
             <input type="text" class="form-control" id="name" required>
         </div>
         <div class="d-flex flex-wrap">
-            <div class="mb-3 col-md-6 col-12 py-md-2 px-2">
-                <label for="dob" class="form-label text-secondary ps-2 mb-0 heading">Date of Birth</label>
+            <div class="mb-3 col-md-6 col-12 px-2 position-relative">
+                <label for="dob" class="enroll_form_label">Date of Birth</label>
                 <input type="date" class="form-control" id="dob" required>
             </div>
-            <div class="mb-3 col-md-6 col-12 py-md-2 px-2">
-                <label class="form-label text-secondary ps-2 mb-0 heading">Gender</label>
+            <div class="mb-3 col-md-6 col-12 px-2 position-relative">
+                <label class="enroll_form_label">Gender</label>
                 <select class="form-select" required>
                     <option value="Boy">Boy</option>
                     <option value="Girl">Girl</option>
                 </select>
             </div>
-            <div class="mb-3 col-md-6 col-12 py-md-2 px-2">
-                <label class="form-label text-secondary ps-2 mb-0 heading">Transport Required</label>
+            <div class="mb-3 col-md-6 col-12 px-2 position-relative">
+                <label class="enroll_form_label">Transport Required</label>
                 <select class="form-select" required>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>
             </div>
-            <div class="mb-3 col-md-6 col-12 py-md-2 px-2">
-                <label for="reportCard" class="form-label text-secondary ps-2 mb-0 heading">Previous Report Card</label>
+            <div class="mb-3 col-md-6 col-12 px-2 position-relative">
+                <label for="reportCard" class="enroll_form_label">Previous Report Card</label>
                 <input type="file" class="form-control d-none" id="reportCard" required>
-                <button type="button" class="w-75 mx-auto btn" onclick="document.querySelector('#reportCard').click()">
+                <button type="button" class="text-start border rounded-1 w-100 btn" onclick="document.querySelector('#reportCard').click()">
                     <img src="<?php echo base_url('assets/img/file.png')?>" alt="file" class="img-fluid" style="height: 1.5rem">
                     Upload
                 </button>
             </div>
         </div>
-        <div class="mb-3 px-2">
-            <label for="class" class="form-label text-secondary ps-2 mb-0 heading">Class Applying For</label>
-            <input type="text" class="form-control" id="class" required>
-        </div>
-        <div class="mb-3 px-2">
-            <label for="aadhaar" class="form-label text-secondary ps-2 mb-0 heading">Aadhaar Number</label>
+        <div class="mb-3 px-2 position-relative">
+            <label for="aadhaar" class="enroll_form_label">Aadhaar Number</label>
             <input type="text" class="form-control" id="aadhaar" required>
         </div>
-        <div class="mb-3 px-2">
-            <label for="parentName" class="form-label text-secondary ps-2 mb-0 heading">Parent Name</label>
+        <div class="mb-3 px-2 position-relative">
+            <label for="parentName" class="enroll_form_label">Parent Name</label>
             <input type="text" class="form-control" id="parentName" required>
         </div>
-        <div class="mb-3 px-2">
-            <label for="contactNumber" class="form-label text-secondary ps-2 mb-0 heading">Contact Number</label>
+        <div class="mb-3 px-2 position-relative">
+            <label for="contactNumber" class="enroll_form_label">Contact Number</label>
             <input type="tel" class="form-control" id="contactNumber" required>
         </div>
-        <div class="mb-3 px-2">
-            <label for="email" class="form-label text-secondary ps-2 mb-0 heading">E-mail</label>
+        <div class="mb-3 px-2 position-relative">
+            <label for="email" class="enroll_form_label">E-mail</label>
             <input type="email" class="form-control" id="email" required>
         </div>
-        <div class="mb-2 px-2">
-            <label for="address" class="form-label text-secondary ps-2 mb-0 heading">Address</label>
-            <textarea class="form-control" id="address" rows="0" required></textarea>
+        <div class="mb-2 px-2 position-relative">
+            <label for="address" class="enroll_form_label">Address</label>
+            <textarea class="form-control" id="address" rows="1" required></textarea>
         </div>
-        <div class="mb-3 form-check">
+        <div class="mb-2 form-check ms-3">
             <input type="checkbox" class="form-check-input" id="agreement" required>
             <label class="form-check-label text-secondary" for="agreement"><small>I agree to the school <a href="policy" target="_blank" class="text-decoration-underline">policies</a>.</small></label>
         </div>
-        <div class="d-flex mt-4 justify-content-around">
-            <button type="reset" class="btn btn-danger w-25" onclick="closeEnroll()">Cancel</button>
-            <button type="submit" class="btn btn-success w-25">Submit</button>
+        <div class="d-flex justify-content-around">
+            <button type="submit" class="btn btn-success w-75">Submit</button>
         </div>
     </form>
     <script>

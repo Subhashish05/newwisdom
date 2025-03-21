@@ -276,7 +276,7 @@ button.btn-theme {
 .enrollment_form{
 	position: fixed;
 	width: clamp(350px, 95%, 500px);
-	height: 80vh;
+	max-height: calc(100vh - 40px);
 	top: 50%;
 	transform: translateY(-50%);
 	left: 100%;
@@ -285,19 +285,16 @@ button.btn-theme {
 	border-radius: .75rem;
 	border: 2px solid #ddd;
 	box-shadow: 0 0 .75rem -0.25rem #135d9e83;
-	padding: 1.25rem;
+	padding: 1rem;
+	overflow-y: scroll;
 	transition: left var(--transition-duration) ease;
 }
-.enrollment_form > form{
-	height: 85%;
-	overflow-y: scroll;
-}
-.enrollment_form > form::-webkit-scrollbar{
+.enrollment_form::-webkit-scrollbar{
 	width: .25rem;
 	background-color: #00000025;
 	border-radius: .5rem;
 }
-.enrollment_form > form::-webkit-scrollbar-thumb{
+.enrollment_form::-webkit-scrollbar-thumb{
 	width: 100%;
 	border-radius: .5rem;
 	background-color: var(--highlight);
@@ -305,6 +302,14 @@ button.btn-theme {
 .enrollment_form.show{
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
+}
+.enroll_form_label{
+	position: absolute;
+	top: -.5rem;
+	left: 2rem;
+	font-size: .75rem;
+	background-color: #fff;
+	color: var(--highlight);
 }
 /*=========================================== Main =========================================== */
 .hero_section{

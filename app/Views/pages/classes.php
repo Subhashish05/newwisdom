@@ -24,16 +24,22 @@
             </p>
         </section>
         <section class="container">
-        <h2 class="section_title fs-1 text-center">
-        Why <span class="text-theme">Choose</span> New Wisdom Academy?
-        </h2>
-        <ul class="card_desc text-justify fs-5 mx-auto mb-5 col-md-9">
-            <li> <span class="fw-bold text-highlight">✔ Experienced Faculty –</span> Highly qualified and dedicated teachers</li>
-            <li> <span class="fw-bold text-highlight">✔ Structured Curriculum –</span> Aligned with national education standards</li>
-            <li> <span class="fw-bold text-highlight">✔ Interactive Learning –</span> Smart classrooms, practice tests, and real-world applications</li>
-            <li> <span class="fw-bold text-highlight">✔ Personalized Attention –</span> Small batch sizes for better engagement</li>
-            <li> <span class="fw-bold text-highlight">✔ Affordable Fees –</span> Quality education at reasonable prices</li>
-        </ul>
+            <h2 class="section_title fs-1 text-center">
+                Why <span class="text-theme">Choose</span> New Wisdom Academy?
+            </h2>
+            <ul class="text-justify fs-5 mx-auto mb-5 col-md-9">
+                <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Experienced Faculty –</span> Highly qualified and dedicated teachers</li>
+                <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Structured Curriculum –</span> Aligned with national education standards</li>
+                <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Interactive Learning –</span> Smart classrooms, practice tests, and real-world applications</li>
+                <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Personalized Attention –</span> Small batch sizes for better engagement</li>
+                <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Affordable Fees –</span> Quality education at reasonable prices</li>
+            </ul>            
+            <div class="text-center">
+                <button type="button" class="btn-theme banner_btn d-inline-block mb-5" onclick="openEnroll()">
+                    <i class="fa fa-right-long"></i>
+                    Enroll Today
+                </button>
+            </div>
             <div class="d-flex flex-wrap mb-5">
                 <div class="col-12 col-md-6">
                     <img src="<?php echo base_url('/assets/img/primary_class.jpg') ?>" alt="" class="img-fluid h-100">

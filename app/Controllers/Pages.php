@@ -17,6 +17,7 @@ class Pages extends BaseController
     public function news($title): string
     {
         $model = model(Backend::class);
+        $data['topNews'] = $model->getTopNews();
         $data['article'] = $model->getNews($title);
         $data['page_name'] = 'news';
         return view('pages/news', $data);

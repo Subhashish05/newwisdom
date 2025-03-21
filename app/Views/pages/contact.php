@@ -24,6 +24,7 @@
         }
         .contact-info {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 20px;
         }
@@ -32,6 +33,12 @@
             background: #b6e6ad;
             padding: 20px;
             border-radius: 8px;
+        }
+        @media (width <= 480px) {
+            .contact-info div {
+                flex-basis: 100%;
+                margin-bottom: 2rem;
+            }
         }
         .contact-info h2 {
             text-align: center;

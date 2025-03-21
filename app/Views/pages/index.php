@@ -188,12 +188,12 @@
                 return document.querySelector('.gallery_preview').classList.remove('show');
             }
         </script>
-        <!-- events -->
+        <!-- notice -->
         <section class="container py-50 px-20">
             <div class="col-12 col-md-9 mb-5">
-                <h2 class="section_title left_heading">Our <span class="text-theme">Events</span> & Celebrations</h2>
+                <h2 class="section_title left_heading">Latest <span class="text-theme">Notice</span> & Announcements</h2>
                 <p class="section_desc mx-0">
-                    Our school inaugurates events with enthusiasm, bringing students, teachers, and guests together to celebrate learning, achievements, and community spirit.
+                    Get the latest school notice and important announcements. Stay Updated with events, student activity, and academic highlights.
                 </p>
             </div>
             <div class="d-flex flex-wrap">
@@ -281,24 +281,24 @@
                     </table>
                     <div data-events="" class="py-4 px-2 text-secondary"></div>
                 </div>
-                <!-- event list -->
+                <!-- notice list -->
                 <div class="col-12 col-md-6 col-lg-7 ps-md-5">
-                    <div class="event_card" data-observe="leftIn">
-                        <div class="event_time"><i class="text-theme fa-regular fa-calendar-days"></i> 14/01/2025 &nbsp;
+                    <div class="notice_card" data-observe="leftIn">
+                        <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 14/01/2025 &nbsp;
                             Whole Day</div>
                         <h3 class="card_title fs-3">Happy Makar Sankranti</h3>
                         <p class="card_desc">Wishing all our students a joyful Makar Sankranti! May this festival bring happiness, success, and new opportunities. Enjoy the kites, sweets, and celebrations with your loved ones. Stay safe, stay blessed, and keep soaring high like the kites in the sky</p>
                     </div>
-                    <div class="event_card" data-observe="leftIn">
-                        <div class="event_time"><i class="text-theme fa-regular fa-calendar-days"></i> 26/01/2025 &nbsp;
+                    <div class="notice_card" data-observe="leftIn">
+                        <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 26/01/2025 &nbsp;
                             07:30am to 12:30pm</div>
                         <h3 class="card_title fs-3">Happy Republic Day</h3>
                         <p class="card_desc">
                             Wishing all our students a proud and joyous Republic Day! Let’s honor the values of our Constitution and strive to be responsible citizens. May this day inspire you to contribute to the nation’s growth with dedication and integrity. Jai Hind
                         </p>
                     </div>
-                    <div class="event_card" data-observe="leftIn">
-                        <div class="event_time"><i class="text-theme fa-regular fa-calendar-days"></i> 02/02/2025 &nbsp;
+                    <div class="notice_card" data-observe="leftIn">
+                        <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 02/02/2025 &nbsp;
                             07:30am to 12:30pm</div>
                         <h3 class="card_title fs-3">Happy Basant Panchami</h3>
                         <p class="card_desc">
@@ -307,7 +307,7 @@
                     </div>
                 </div>
                 <div class="col-12 text-end">
-                    <a href="/event" class="text-highlight">ALL EVENTS <i class="fa fa-arrow-right-long"></i> </a>
+                    <a href="/notice" class="text-highlight">NOTICE BOARD <i class="fa fa-arrow-right-long"></i> </a>
                 </div>
             </div>
         </section>
@@ -372,12 +372,12 @@
                 </div>
             </div>
         </section>
-        <!-- news -->
+        <!-- event -->
         <section class="container py-50 px-20">
             <div class="col-12 col-md-8">
-                <h2 class="section_title left_heading">Latest <span class="text-theme">News</span> & Updates</h2>
+                <h2 class="section_title left_heading">Our <span class="text-theme">Events</span> & Celebrations</h2>
                 <p class="section_desc mx-0">
-                    Get the latest school news, achievements, and important announcements. Stay connected with events, student success, and academic highlights.
+                    Our school inaugurates events with enthusiasm, bringing students, teachers, and guests together to celebrate learning, achievements, and community spirit.
                 </p>
             </div>
             <div class="d-flex flex-wrap mt-3">

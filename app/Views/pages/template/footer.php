@@ -80,13 +80,13 @@
             <div class="col-8 mx-auto">
                 <h4 class="card_title">Quick Links</h4>
                 <ul>
-                    <li><a href="<?php echo base_url('about') ?>" class="card_desc">About Us</a></li>
-                    <li><a href="<?php echo base_url('contact') ?>" class="card_desc">Contact Us</a></li>
-                    <li><a href="<?php echo base_url('notice') ?>" class="card_desc">Notice Board</a></li>
-                    <li><a href="<?php echo base_url('teachers') ?>" class="card_desc">School Teachers</a></li>
-                    <li><a href="<?php echo base_url('event') ?>" class="card_desc">Recent Events</a></li>
-                    <li><a href="<?php echo base_url('classes') ?>" class="card_desc">Our Classes</a></li>
-                    <li><a href="<?php echo base_url('gallery') ?>" class="card_desc">Our Gallery</a></li>
+                    <li><a href="<?php echo base_url('about') ?>" class="card_desc">About</a></li>
+                    <li><a href="<?php echo base_url('contact') ?>" class="card_desc">Contact</a></li>
+                    <li><a href="<?php echo base_url('notice') ?>" class="card_desc">NoticeBoard</a></li>
+                    <li><a href="<?php echo base_url('teachers') ?>" class="card_desc">Teachers</a></li>
+                    <li><a href="<?php echo base_url('event') ?>" class="card_desc">Events</a></li>
+                    <li><a href="<?php echo base_url('classes') ?>" class="card_desc">Classes</a></li>
+                    <li><a href="<?php echo base_url('gallery') ?>" class="card_desc">Gallery</a></li>
                     <li><a href="<?php echo base_url('rules') ?>" class="card_desc">Our Rules</a></li>
                     <li><a href="<?php echo base_url('policy') ?>" class="card_desc">Policy</a></li>
                 </ul>

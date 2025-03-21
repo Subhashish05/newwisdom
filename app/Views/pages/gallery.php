@@ -20,21 +20,26 @@
         <section class="hero_section">
             <h1 class="section_title">Moments Captured Perfectly</h1>
         </section>
+        <div class="text-center py-3">
+            <button type="button" class="btn-theme banner_btn d-inline-block" onclick="openEnroll()">
+                <i class="fa fa-right-long"></i>
+                Enroll Today
+            </button>
+        </div>
         <section class="container d-flex flex-wrap my-5">
-            <?php 
-                $i = 1;
-                while ($i <= 10) {
-                    echo '
+            <?php
+            $i = 1;
+            while ($i <= 10) {
+                echo '
                     <div class="col-6 col-md-3 p-3">
                         <div class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-25 h-100 rounded-2 overflow-hidden">
-                            <img src="'.base_url('assets/img/gallery/img'.$i.'.webp').'" alt="gallery" class="img-fluid">
+                            <img src="' . base_url('assets/img/gallery/img' . $i . '.webp') . '" alt="gallery" class="img-fluid">
                         </div>
                     </div>
                     ';
-                    $i++;
-                }
+                $i++;
+            }
             ?>
-            
         </section>
     </main>
     <?php include 'template/footer.php'; ?>

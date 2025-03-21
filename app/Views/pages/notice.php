@@ -15,15 +15,15 @@
     <style>
         .notice {
             background: #ecf7ff;
-            padding: 15px;
-            margin: 10px 0;
+            padding: 1rem;
+            margin-bottom: 2rem;
             border-radius: .5rem;
             overflow: hidden;
-            border-left: 5px solid var(--theme-color);
+            border-left: .25rem solid var(--theme-color);
         }
         .notice h2 {
             color: var(--highlight);
-            margin: 0 0 10px;
+            margin-bottom: .75rem;
         }
         .notice p {
             margin: 0;

@@ -19,13 +19,15 @@
             gap: 20px;
             margin-top: 20px;
         }
+
         .teacher-card {
-            background-color:rgb(239, 225, 255);
+            background-color: rgb(239, 225, 255);
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
         .teacher-card img {
             width: 100px;
             height: 100px;
@@ -33,11 +35,13 @@
             object-fit: cover;
             border: 2px solid #999;
         }
+
         .teacher-card h3 {
             font-size: 1.25rem;
             margin: 10px 0 5px;
             color: #4A148C;
         }
+
         .teacher-card p {
             color: #00000070;
             font-size: 14px;
@@ -48,34 +52,40 @@
 <body>
     <?php include 'template/header.php'; ?>
     <main>
-    <section class="hero_section">
-        <h1 class="section_title">Meet Our Teachers</h1>
-        <p class="section_desc">Our dedicated and experienced teachers are committed to providing quality education and guidance to our students.</p>
-    </section>
-    <div class="container mb-5">
-        <div class="teacher-grid">
-            <div class="teacher-card">
-                <img src="<?php echo base_url('assets/img/teachers/teacher1.png') ?>" alt="Teacher 1">
-                <h3>Mr. Rahul Sharma</h3>
-                <p>Mathematics Teacher</p>
-            </div>
-            <div class="teacher-card">
-                <img src="<?php echo base_url('assets/img/teachers/teacher2.png') ?>" alt="Teacher 2">
-                <h3>Mrs. Priya Singh</h3>
-                <p>Science Teacher</p>
-            </div>
-            <div class="teacher-card">
-                <img src="<?php echo base_url('assets/img/teachers/teacher1.png') ?>" alt="Teacher 3">
-                <h3>Ms. Anjali Verma</h3>
-                <p>English Teacher</p>
-            </div>
-            <div class="teacher-card">
-                <img src="<?php echo base_url('assets/img/teachers/teacher2.png') ?>" alt="Teacher 4">
-                <h3>Mrs. Rekha Gupta</h3>
-                <p>Social Studies Teacher</p>
-            </div>
+        <section class="hero_section">
+            <h1 class="section_title">Meet Our Teachers</h1>
+            <p class="section_desc">Our dedicated and experienced teachers are committed to providing quality education and guidance to our students.</p>
+        </section>
+        <div class="text-center py-3">
+            <button type="button" class="btn-theme banner_btn d-inline-block" onclick="openEnroll()">
+                <i class="fa fa-right-long"></i>
+                Enroll Today
+            </button>
         </div>
-    </div>
+        <section class="container mb-5">
+            <div class="teacher-grid">
+                <div class="teacher-card">
+                    <img src="<?php echo base_url('assets/img/teachers/teacher1.png') ?>" alt="Teacher 1">
+                    <h3>Mr. Rahul Sharma</h3>
+                    <p>Mathematics Teacher</p>
+                </div>
+                <div class="teacher-card">
+                    <img src="<?php echo base_url('assets/img/teachers/teacher2.png') ?>" alt="Teacher 2">
+                    <h3>Mrs. Priya Singh</h3>
+                    <p>Science Teacher</p>
+                </div>
+                <div class="teacher-card">
+                    <img src="<?php echo base_url('assets/img/teachers/teacher1.png') ?>" alt="Teacher 3">
+                    <h3>Ms. Anjali Verma</h3>
+                    <p>English Teacher</p>
+                </div>
+                <div class="teacher-card">
+                    <img src="<?php echo base_url('assets/img/teachers/teacher2.png') ?>" alt="Teacher 4">
+                    <h3>Mrs. Rekha Gupta</h3>
+                    <p>Social Studies Teacher</p>
+                </div>
+            </div>
+        </section>
     </main>
     <?php include 'template/footer.php'; ?>
     <script src="<?php echo base_url('/assets/js/script.js') ?>"></script>

@@ -19,7 +19,8 @@
             line-height: 1.5;
             text-align: justify;
         }
-        .mission_para::first-letter{
+
+        .mission_para::first-letter {
             color: var(--highlight);
             font-size: 5rem;
             line-height: 3rem;
@@ -27,10 +28,19 @@
             font-family: 'Times New Roman', Times, serif;
             float: left;
         }
+
         .section_desc2 {
             font-size: 1.05rem;
             max-width: 100%;
             text-align: justify;
+        }
+
+        @media (width <=480px) {
+
+            .mission_para,
+            .section_desc2 {
+                font-size: .85rem;
+            }
         }
     </style>
 </head>
@@ -45,13 +55,13 @@
             </p>
         </section>
         <div class="container">
-            <div class="">
+            <div>
                 <h2 class="text-center section_title mb-3 mt-5">
                     Our <span class="text-theme">Mission</span>
                 </h2>
                 <p class="mission_para clear-fix">
-                    <img src="<?php echo base_url('assets/img/about/mission_banner.webp') ?>" alt="school image" class="col-12 col-md-5 mx-3 mt-2 float-end clearfix">
                     At New Wisdom Academy, our mission is to provide a well-rounded education that nurtures intellectual curiosity, critical thinking, and a passion for lifelong learning. We believe that every child has the potential to achieve greatness, and our role is to create an environment that supports their academic, emotional, and personal growth.
+                    <img src="<?php echo base_url('assets/img/about/mission_banner.webp') ?>" alt="school image" class="col-12 col-md-5 px-3 pt-2 float-end clearfix">
                     Our curriculum is designed to blend strong academic foundations with practical knowledge, fostering a culture of innovation, leadership, and creativity. Beyond textbooks and traditional learning, we emphasize experiential learning, allowing students to engage in real-world applications of their studies.
                     In today’s fast-evolving world, education is more than just scoring good marks. We equip our students with 21st-century skills, including problem-solving, communication, teamwork, and adaptability. We integrate technology into our teaching methodologies, ensuring that our students are not just learners but also future leaders in their respective fields.
                     Moreover, we believe in a value-based education system, where students develop a strong sense of ethics, responsibility, and discipline. Through regular personality development programs, social awareness activities, and leadership training, we ensure that our students grow up to be responsible global citizens.
@@ -76,12 +86,18 @@
                 <div class="col-12 col-md-6 px-3">
                     <img src="<?php echo base_url('assets/img/about/why_choose.webp') ?>" alt="why choose us" class="img-fluid">
                 </div>
+            </div>            
+            <div class="text-center py-3">
+                <button type="button" class="btn-theme banner_btn d-inline-block" onclick="openEnroll()">
+                    <i class="fa fa-right-long"></i>
+                    Enroll Today
+                </button>
             </div>
             <div class="d-flex flex-wrap">
                 <h2 class="text-center section_title mb-3 mt-5 col-12">
                     Our <span class="text-theme">Activities</span>
                 </h2>
-                <div class="col-12 col-md-6 px-3">
+                <div class="col-12 col-md-6 px-3 mb-3">
                     <img src="<?php echo base_url('assets/img/about/our_activity.webp') ?>" alt="our activites" class="img-fluid">
                 </div>
                 <div class="col-12 col-md-6">

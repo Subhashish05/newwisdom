@@ -272,7 +272,8 @@ div[data-gallery]{
 	z-index: -1;
 }
 .calender_cell {
-	padding: 0.75rem 0.5rem;
+	padding: 0.75rem 0;
+	text-align: center;
 	background-color: #0000001e;
 	border: 2px solid #3d3d3d80;
 }
@@ -312,7 +313,7 @@ div[data-gallery]{
 	background: #e4ffe4;
 	color: #008000;
 }
-.event_card {
+.notice_card {
 	background-color: #eef7ff;
 	box-shadow: 0 0 0.75rem #1557991a;
 	padding: 0.75rem 0.5rem 0.75rem 1.5rem;
@@ -321,7 +322,7 @@ div[data-gallery]{
 	margin-bottom: 1rem;
 	overflow: hidden;
 }
-.event_card::before {
+.notice_card::before {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -330,17 +331,17 @@ div[data-gallery]{
 	left: 0;
 	background-image: linear-gradient(15deg, #f37335, #fdc830);
 }
-.event_card > .card_title{
+.notice_card > .card_title{
 	color: var(--highlight);
 }
-.event_time {
+.notice_time {
 	color: var(--desc-color);
 	font-size: 1rem;
 	margin-bottom: 0rem;
 	text-align: right;
 }
 @media (width >= 768px) {
-    .event_card:nth-child(2) {
+    .notice_card:nth-child(2) {
         left: -2rem;
     }
 }
@@ -360,7 +361,7 @@ div[data-gallery]{
     }
 }
 .testimonial {
-	color: #2da32d;
+	color: #467e1e;
 	font-size: 1.25rem;
 	line-height: 1.5;
 	margin: 2.5rem 0 1.25rem;
@@ -398,7 +399,7 @@ div[data-gallery]{
 	position: relative;
 	z-index: 9;
 }
-/*====================================== News Section ======================================*/
+/*====================================== event Section ======================================*/
 .news_img {
 	border-radius: .25rem;
 	width: 100%;
