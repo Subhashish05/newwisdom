@@ -39,23 +39,17 @@
             <h1 class="section_title">Notice Board</h1>
         </section>
     <section class="container mb-5">        
-        <div class="notice">
-            <h2>Upcoming Examination Schedule</h2>
-            <p>Date: March 20, 2025</p>
-            <p>All students are required to check their exam timetable.</p>
-        </div>
-        
-        <div class="notice">
-            <h2>School Reopening Notice</h2>
-            <p>Date: April 10, 2025</p>
-            <p>The school will reopen for the new academic session.</p>
-        </div>
-        
-        <div class="notice">
-            <h2>Holiday Announcement</h2>
-            <p>Date: Holi Festival</p>
-            <p>The academy will remain closed for Holi celebrations.</p>
-        </div>
+        <?php
+            foreach($notices as $notice){
+                echo '
+                    <div class="notice">
+                        <h2>'.$notice->title.'</h2>
+                        <p>Date: '.($notice->date).'</p>
+                        <p>'.$notice->context.'</p>
+                    </div>
+                ';
+            }
+        ?>
     </section>
     </main>
     <?php include 'template/footer.php'; ?>

@@ -10,9 +10,25 @@ class Pages extends BaseController
     {
         $model = model(Backend::class);
         $data['topNews'] = $model->getTopNews();
+        $db = db_connect();
+        $data['images'] = $db->table('gallery')->get()->getResult();
         $data['page_name'] = 'home';
 
         return view('pages/index', $data);
+    }
+    public function notice(): string
+    {
+        $data['page_name'] = 'notice';
+        $db = db_connect();
+        $data['notices'] = $db->table('noticeboard')->orderBy('date', 'DESC')->get()->getResult();
+        return view('pages/notice', $data);
+    }
+    public function gallery(): string
+    {
+        $data['page_name'] = 'gallery';
+        $db = db_connect();
+        $data['images'] = $db->table('gallery')->get()->getResult();
+        return view('pages/gallery', $data);
     }
     public function news($title): string
     {

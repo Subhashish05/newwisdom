@@ -82,61 +82,53 @@
 </header>
 <div class="enrollment_form">
     <div class="position-fixed top-0 end-0 btn" onclick="closeEnroll()">
-        <i class="fa fa-xmark fs-4"></i>
+        <i class="fa fa-xmark fs-4 text-danger"></i>
     </div>
     <h3 class="text-center mb-3 heading text-theme">School Enrollment Form</h3>
-    <form action="/enrollment-form" method="post" enctype="multipart/form-data">
+    <form action="/enrollment_form" method="post" enctype="multipart/form-data">
         <div class="mb-3 px-2 position-relative">
             <label for="name" class="enroll_form_label">Full Name</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" class="form-control" name="name" id="name" required>
+        </div>
+        <div class="mb-3 px-2 position-relative">
+            <label for="parentName" class="enroll_form_label">Father's' Name</label>
+            <input type="text" class="form-control" name="father_name" id="parentName" required>
+        </div>
+        <div class="mb-3 px-2 position-relative">
+            <label for="contactNumber" class="enroll_form_label">Contact Number</label>
+            <input type="tel" class="form-control" name="number" id="contactNumber" required>
+        </div>
+        <div class="mb-3 px-2 position-relative">
+            <label for="email" class="enroll_form_label">E-mail</label>
+            <input type="email" class="form-control" name="email" id="email" required>
         </div>
         <div class="d-flex flex-wrap">
             <div class="mb-3 col-md-6 col-12 px-2 position-relative">
                 <label for="dob" class="enroll_form_label">Date of Birth</label>
-                <input type="date" class="form-control" id="dob" required>
+                <input type="date" class="form-control" name="DOB" id="dob" required>
             </div>
             <div class="mb-3 col-md-6 col-12 px-2 position-relative">
                 <label class="enroll_form_label">Gender</label>
-                <select class="form-select" required>
+                <select class="form-select" name="gender" required>
                     <option value="Boy">Boy</option>
                     <option value="Girl">Girl</option>
                 </select>
             </div>
             <div class="mb-3 col-md-6 col-12 px-2 position-relative">
                 <label class="enroll_form_label">Transport Required</label>
-                <select class="form-select" required>
+                <select class="form-select" name="transport" required>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select>
             </div>
             <div class="mb-3 col-md-6 col-12 px-2 position-relative">
-                <label for="reportCard" class="enroll_form_label">Previous Report Card</label>
-                <input type="file" class="form-control d-none" id="reportCard" required>
-                <button type="button" class="text-start border rounded-1 w-100 btn" onclick="document.querySelector('#reportCard').click()">
-                    <img src="<?php echo base_url('assets/img/file.png')?>" alt="file" class="img-fluid" style="height: 1.5rem">
-                    Upload
-                </button>
+                <label for="aadhar" class="enroll_form_label">Aadher Number</label>
+                <input type="text" class="form-control" name="aadhar" id="aadhar" required>
             </div>
-        </div>
-        <div class="mb-3 px-2 position-relative">
-            <label for="aadhaar" class="enroll_form_label">Aadhaar Number</label>
-            <input type="text" class="form-control" id="aadhaar" required>
-        </div>
-        <div class="mb-3 px-2 position-relative">
-            <label for="parentName" class="enroll_form_label">Parent Name</label>
-            <input type="text" class="form-control" id="parentName" required>
-        </div>
-        <div class="mb-3 px-2 position-relative">
-            <label for="contactNumber" class="enroll_form_label">Contact Number</label>
-            <input type="tel" class="form-control" id="contactNumber" required>
-        </div>
-        <div class="mb-3 px-2 position-relative">
-            <label for="email" class="enroll_form_label">E-mail</label>
-            <input type="email" class="form-control" id="email" required>
         </div>
         <div class="mb-2 px-2 position-relative">
             <label for="address" class="enroll_form_label">Address</label>
-            <textarea class="form-control" id="address" rows="1" required></textarea>
+            <textarea class="form-control" id="address" name="address" rows="1" required></textarea>
         </div>
         <div class="mb-2 form-check ms-3">
             <input type="checkbox" class="form-check-input" id="agreement" required>

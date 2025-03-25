@@ -283,10 +283,9 @@ button.btn-theme {
 	z-index: 20;
 	background-color: #fff;
 	border-radius: .75rem;
-	border: 2px solid #ddd;
-	box-shadow: 0 0 .75rem -0.25rem #135d9e83;
-	padding: 1rem;
-	overflow-y: scroll;
+	border: 2px solid var(--highlight);
+	box-shadow: 0 0 1rem -0.15rem #135d9e83;
+	padding: 1.5rem 1rem;
 	transition: left var(--transition-duration) ease;
 }
 .enrollment_form::-webkit-scrollbar{
