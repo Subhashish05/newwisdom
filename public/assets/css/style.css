@@ -76,14 +76,15 @@ button.btn-theme {
 	border-radius: 1.875rem;
 	transition: all var(--transition-duration) ease-in-out;
 }
-.btn-theme > i {
+.btn-theme > svg {
 	background-color: #fff;
-	width: 1.75rem;
-	height: 1.75rem;
+	width: 1.7rem;
+	height: 1.7rem;
+	padding: 0.15rem;
 	line-height: 1.75rem;
 	text-align: center;
 	border-radius: 5rem;
-	color: var(--highlight);
+	fill: var(--highlight);
 	position: absolute;
 	top: 50%;
 	transition: all var(--transition-duration) ease-in-out;
@@ -94,8 +95,8 @@ button.btn-theme {
 	color: #fff;
 	background-color: var(--theme-color);
 }
-.btn-theme:hover > i {
-	color: var(--theme-color);
+.btn-theme:hover > svg {
+	fill: var(--theme-color);
 	left: calc(87% - 6px);
 }
 .section_title {
@@ -157,7 +158,7 @@ button.btn-theme {
 	width: auto;
 }
 .top_bar .contact_icon {
-	color: var(--theme-color);
+	fill: var(--theme-color);
 	font-size: 1.25rem;
 	height: 1.25rem;
 	margin: 0.5rem 0.75rem;
@@ -239,6 +240,11 @@ button.btn-theme {
 	border-radius: 50%;
 	margin: 0 0.5rem;
 	transition: all var(--transition-duration) ease;
+}
+.social_media_logo > svg{
+	fill: #fff;
+	height: 1.3rem;
+	width: 1.3rem;
 }
 .social_media_logo:hover {
 	scale: 1.25;
@@ -447,7 +453,7 @@ footer {
 	padding-top: 13rem;
 }
 footer .contact_icon {
-	color: var(--theme-color);
+	fill: var(--theme-color);
 	font-size: 1.25rem;
 	height: 1.25rem;
 	margin: 0.5rem;

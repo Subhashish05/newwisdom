@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to New Wisdom Academy</title>
     <meta name="description" content="New Wisdom Academy is a laudable initiative by the ‘Aarna-Bilvani Educational Society’ to promote quality and modern education to children of our country, especially of Ghatsila, Galudih, Jamshedpur and adjoining areas.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
     <link rel="preload" href="<?php echo base_url('assets/img/home/mob_banner1.webp') ?>" as="image">
 
@@ -72,7 +70,7 @@
                         Where wisdom meets excellence! At New Wisdom Academy, we nurture young minds with top-notch academics, smart classrooms, and modern facilities. With expert teachers and a student-focused approach, we shape bright futures. Enroll today and watch your child thrive!
                     </p>
                     <button type="button" class="btn-theme banner_btn d-inline my-5" onclick="openEnroll()">
-                        <i class="fa fa-right-long"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
                         Enroll Today
                     </button>
                 </div>
@@ -166,7 +164,9 @@
                 </div>
             </div>
             <div class="text-end">
-                <a href="/gallery" class="text-highlight">OUR GALLERY<i class="fa fa-arrow-right-long"></i></a>
+                <a href="/gallery" class="text-highlight">OUR GALLERY
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                </a>
             </div>
         </section>
         <script>
@@ -314,7 +314,8 @@
                     </div>
                 </div>
                 <div class="col-12 text-end">
-                    <a href="/notice" class="text-highlight">NOTICE BOARD <i class="fa fa-arrow-right-long"></i> </a>
+                    <a href="/notice" class="text-highlight">NOTICE BOARD 
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg> </a>
                 </div>
             </div>
         </section>
@@ -398,7 +399,9 @@
                                     <p class="card_desc">'.$news['description'].'</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <p class="event_time">'.$news['date'].'</p>
-                                        <a href="/news/'.$news['title'].'" class="text-highlight">Read More <i class="fa fa-arrow-right"></i></a>
+                                        <a href="/news/'.$news['title'].'" class="text-highlight">Read More 
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#135e9e" height="1rem"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
