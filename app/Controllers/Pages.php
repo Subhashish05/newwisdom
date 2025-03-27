@@ -30,6 +30,13 @@ class Pages extends BaseController
         $data['images'] = $db->table('gallery')->get()->getResult();
         return view('pages/gallery', $data);
     }
+    public function teachers(): string
+    {
+        $data['page_name'] = 'teachers';
+        $db = db_connect();
+        $data['teachers'] = $db->table('teachers')->get()->getResult();
+        return view('pages/teachers', $data);
+    }
     public function news($title): string
     {
         $model = model(Backend::class);

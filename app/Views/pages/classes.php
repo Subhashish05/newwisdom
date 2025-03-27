@@ -9,8 +9,12 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
+    
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/style.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css') ?>">
 </head>
 
@@ -42,7 +46,7 @@
             </div>
             <div class="d-flex flex-wrap mb-5">
                 <div class="col-12 col-md-6">
-                    <img src="<?php echo base_url('/assets/img/primary_class.jpg') ?>" alt="" class="img-fluid h-100">
+                    <img data-src="<?php echo base_url('/assets/img/primary_class.jpg') ?>" alt="" class="img-fluid h-100 lazy">
                 </div>
                 <div class="col-12 col-md-6 pt-3 px-3" style="background-color: #ffefee;">
                     <h2 class="card_title fs-2" style="color: #e77e79;">
@@ -71,12 +75,12 @@
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="<?php echo base_url('/assets/img/middle_class.jpg') ?>" alt="" class="img-fluid h-100">
+                    <img data-src="<?php echo base_url('/assets/img/middle_class.jpg') ?>" alt="" class="img-fluid h-100 lazy">
                 </div>
             </div>
             <div class="d-flex flex-wrap mb-5">
                 <div class="col-12 col-md-6">
-                    <img src="<?php echo base_url('/assets/img/high_class.jpg') ?>" alt="" class="img-fluid h-100">
+                    <img data-src="<?php echo base_url('/assets/img/high_class.jpg') ?>" alt="" class="img-fluid h-100 lazy">
                 </div>
                 <div class="col-12 col-md-6 pt-3 px-3" style="background-color: #ebfff7;">
                     <h2 class="card_title fs-2" style="color: #066d3f;">
@@ -105,7 +109,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="<?php echo base_url('/assets/img/learn_eng.jpg') ?>" alt="" class="img-fluid h-100">
+                    <img data-src="<?php echo base_url('/assets/img/learn_eng.jpg') ?>" alt="" class="img-fluid h-100 lazy">
                 </div>
             </div>
         </section>

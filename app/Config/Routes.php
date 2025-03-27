@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', [Pages::class, 'index']);
+$routes->get('/teachers', [Pages::class, 'teachers']);
 $routes->get('/gallery', [Pages::class, 'gallery']);
 $routes->get('/notice', [Pages::class, 'notice']);
 $routes->get('/event', [Pages::class, 'event']);

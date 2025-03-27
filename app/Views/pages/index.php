@@ -10,12 +10,19 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
-    <link rel="stylesheet" href="<?php echo base_url('/assets/css/OpenSans-Regular.ttf') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('/assets/css/Poppins-Regular.ttf') ?>">
+    <link rel="preload" href="<?php echo base_url('assets/img/home/mob_banner1.webp') ?>" as="image">
+
+    <link rel="preload" href="<?php echo base_url('/assets/css/OpenSans-Regular.woff2') ?>"as="font" type="font/woff2">
+    <link rel="preload" href="<?php echo base_url('/assets/css/Poppins-Regular.woff2') ?>"as="font" type="font/woff2">
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/slider.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/slider.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/style.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/home.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/home.css') ?>">
 </head>
 
@@ -27,9 +34,9 @@
             <h2 class="main_title">Wisdom</h2>
             <div class="main_banner container">
                 <div class="mob_banner">
-                    <img src=" " alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner1.webp') ?>" data-mob_banner_index="1" class="active">
-                    <img src=" " alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner2.webp') ?>" data-mob_banner_index="2">
-                    <img src=" " alt="mobile banner" data-src="<?php echo base_url('assets/img/home/mob_banner3.webp') ?>" data-mob_banner_index="3">
+                    <img src=" " alt="mobile banner" data-src2="<?php echo base_url('assets/img/home/mob_banner1.webp') ?>" data-mob_banner_index="1" class="active">
+                    <img src=" " alt="mobile banner" data-src2="<?php echo base_url('assets/img/home/mob_banner2.webp') ?>" data-mob_banner_index="2">
+                    <img src=" " alt="mobile banner" data-src2="<?php echo base_url('assets/img/home/mob_banner3.webp') ?>" data-mob_banner_index="3">
                 </div>
                 <script>
                     let crt_bnr = 1;
@@ -39,8 +46,8 @@
                     function mob_banner(cb, nb) {
                         let banner = document.querySelector(`[data-mob_banner_index="${cb}"]`)
                         let nxt_banner = document.querySelector(`[data-mob_banner_index="${nb}"]`)
-                        if (banner.src == '<?php echo base_url() ?>') banner.src = banner.getAttribute('data-src');
-                        if (nxt_banner.src == '<?php echo base_url() ?>') nxt_banner.src = nxt_banner.getAttribute('data-src');
+                        if (banner.src == '<?php echo base_url() ?>') banner.src = banner.getAttribute('data-src2');
+                        if (nxt_banner.src == '<?php echo base_url() ?>') nxt_banner.src = nxt_banner.getAttribute('data-src2');
                         mob_banners.forEach((e) => {
                             e.classList.remove('active', 'next')
                         });
@@ -71,7 +78,7 @@
                 </div>
                 <div class="col-12 col-md-5 position-relative d-none d-md-inline" data-observe="zoomIn">
                     <div class="banner_element"></div>
-                    <img src="<?php echo base_url('/assets/img/home/banner-img.png') ?>" alt="banner image">
+                    <img src="<?php echo base_url('/assets/img/home/banner-img.webp') ?>" alt="banner image">
                 </div>
             </div>
         </section>
@@ -86,28 +93,28 @@
             <div class="d-flex flex-wrap mt-5">
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #ffefe6;">
-                        <img src="<?php echo base_url('/assets/img/home/icon1.png') ?>" alt="icon" class="mb-3">
+                        <img data-src="<?php echo base_url('/assets/img/home/icon1.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-theme">Smart Classrooms</h3>
                         <p class="card_desc"> Interactive and tech-enabled for an engaging learning environment.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #eef7ff;">
-                        <img src="<?php echo base_url('/assets/img/home/icon2.png') ?>" alt="icon" class="mb-3">
+                        <img data-src="<?php echo base_url('/assets/img/home/icon2.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-highlight">Well Qualified Teachers</h3>
                         <p class="card_desc">Experienced educators dedicated to shaping bright futures.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #ffefe6;">
-                        <img src="<?php echo base_url('/assets/img/home/icon3.png') ?>" alt="icon" class="mb-3">
+                        <img data-src="<?php echo base_url('/assets/img/home/icon3.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-theme">Latest Teaching Method</h3>
                         <p class="card_desc">Innovative, student-centric approaches for effective learning.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
                     <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #eef7ff;">
-                        <img src="<?php echo base_url('/assets/img/home/icon4.png') ?>" alt="icon" class="mb-3">
+                        <img data-src="<?php echo base_url('/assets/img/home/icon4.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-highlight">Modern Infrastructure</h3>
                         <p class="card_desc">A well-equipped campus designed for comfort and excellence.</p>
                     </div>
@@ -128,34 +135,34 @@
         <section class="container py-50 px-20">
             <div class="masonary">
                 <div class="masonary_img1 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img1.webp') ?>" alt="Gallery Image" onclick="show_img(this, 1)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img1.webp') ?>" alt="Gallery Image" onclick="show_img(this, 1)" class="lazy">
                 </div>
                 <div class="masonary_img2 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img2.webp') ?>" alt="Gallery Image" onclick="show_img(this, 2)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img2.webp') ?>" alt="Gallery Image" onclick="show_img(this, 2)" class="lazy">
                 </div>
                 <div class="masonary_img3 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img3.webp') ?>" alt="Gallery Image" onclick="show_img(this, 3)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img3.webp') ?>" alt="Gallery Image" onclick="show_img(this, 3)" class="lazy">
                 </div>
                 <div class="masonary_img4 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img4.webp') ?>" alt="Gallery Image" onclick="show_img(this, 4)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img4.webp') ?>" alt="Gallery Image" onclick="show_img(this, 4)" class="lazy">
                 </div>
                 <div class="masonary_img5 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img5.webp') ?>" alt="Gallery Image" onclick="show_img(this, 5)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img5.webp') ?>" alt="Gallery Image" onclick="show_img(this, 5)" class="lazy">
                 </div>
                 <div class="masonary_img6 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img6.webp') ?>" alt="Gallery Image" onclick="show_img(this, 6)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img6.webp') ?>" alt="Gallery Image" onclick="show_img(this, 6)" class="lazy">
                 </div>
                 <div class="masonary_img7 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img7.webp') ?>" alt="Gallery Image" onclick="show_img(this, 7)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img7.webp') ?>" alt="Gallery Image" onclick="show_img(this, 7)" class="lazy">
                 </div>
                 <div class="masonary_img8 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img8.webp') ?>" alt="Gallery Image" onclick="show_img(this, 8)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img8.webp') ?>" alt="Gallery Image" onclick="show_img(this, 8)" class="lazy">
                 </div>
                 <div class="masonary_img9 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img9.webp') ?>" alt="Gallery Image" onclick="show_img(this, 9)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img9.webp') ?>" alt="Gallery Image" onclick="show_img(this, 9)" class="lazy">
                 </div>
                 <div class="masonary_img10 " data-observe="zoomIn">
-                    <img src="<?php echo base_url('assets/img/gallery/img10.webp') ?>" alt="Gallery Image" onclick="show_img(this, 10)">
+                    <img data-src="<?php echo base_url('assets/img/gallery/img10.webp') ?>" alt="Gallery Image" onclick="show_img(this, 10)" class="lazy">
                 </div>
             </div>
             <div class="text-end">
@@ -386,7 +393,7 @@
                         echo '
                             <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
                                 <div>
-                                    <img src="'. base_url('/assets/img/'.$news['img']).'" alt="News article" class="news_img mb-2">
+                                    <img data-src="'. base_url('/assets/img/'.$news['img']).'" alt="News article" class="news_img mb-2 lazy">
                                     <h3 class="card_title">'.$news['heading'].'</h3>
                                     <p class="card_desc">'.$news['description'].'</p>
                                     <div class="d-flex justify-content-between align-items-center">

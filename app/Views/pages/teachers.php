@@ -9,8 +9,12 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
+    
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/style.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css') ?>">
     <style>
         .teacher-grid {
@@ -64,26 +68,17 @@
         </div>
         <section class="container mb-5">
             <div class="teacher-grid">
-                <div class="teacher-card">
-                    <img src="<?php echo base_url('assets/img/teachers/teacher1.png') ?>" alt="Teacher 1">
-                    <h3>Mr. Rahul Sharma</h3>
-                    <p>Mathematics Teacher</p>
-                </div>
-                <div class="teacher-card">
-                    <img src="<?php echo base_url('assets/img/teachers/teacher2.png') ?>" alt="Teacher 2">
-                    <h3>Mrs. Priya Singh</h3>
-                    <p>Science Teacher</p>
-                </div>
-                <div class="teacher-card">
-                    <img src="<?php echo base_url('assets/img/teachers/teacher1.png') ?>" alt="Teacher 3">
-                    <h3>Ms. Anjali Verma</h3>
-                    <p>English Teacher</p>
-                </div>
-                <div class="teacher-card">
-                    <img src="<?php echo base_url('assets/img/teachers/teacher2.png') ?>" alt="Teacher 4">
-                    <h3>Mrs. Rekha Gupta</h3>
-                    <p>Social Studies Teacher</p>
-                </div>
+                <?php
+                    foreach($teachers as $teacher){
+                        echo '
+                            <div class="teacher-card">
+                                <img data-src="'.base_url('assets/img/teachers/'.$teacher->pic).'" alt="Teacher image" title="'.$teacher->name.'" class="lazy">
+                                <h3>'.$teacher->name.'</h3>
+                                <p>'.$teacher->qualification.'</p>
+                            </div>
+                        ';
+                    }
+                ?>
             </div>
         </section>
     </main>

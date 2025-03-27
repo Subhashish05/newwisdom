@@ -9,8 +9,12 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
+    
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/style.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css') ?>">
     <style>
         .news_img {
@@ -45,7 +49,7 @@
                     echo '
                             <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
                                 <div>
-                                    <img src="' . base_url('/assets/img/' . $news['img']) . '" alt="News article" class="news_img mb-2">
+                                    <img data-src="' . base_url('/assets/img/' . $news['img']) . '" alt="News article" class="lazy news_img mb-2">
                                     <h3 class="card_title">' . $news['heading'] . '</h3>
                                     <p class="card_desc">' . $news['description'] . '</p>
                                     <div class="d-flex justify-content-between align-items-center">

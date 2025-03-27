@@ -14,7 +14,7 @@ const Observer = new IntersectionObserver(
 					entry.target.classList.add("leftIn");
 					Observer.unobserve(entry.target);
 				}
-			}else{
+			} else {
 			}
 		});
 	},
@@ -25,4 +25,51 @@ const Observer = new IntersectionObserver(
 const elem = document.querySelectorAll("[data-observe]");
 elem.forEach((e) => {
 	Observer.observe(e);
+});
+document.addEventListener("DOMContentLoaded", function () {
+	var b;
+	if ("IntersectionObserver" in window) {
+		b = document.querySelectorAll(".lazy");
+		var d = new IntersectionObserver(
+			function (e, f) {
+				e.forEach(function (g) {
+					if (g.isIntersecting) {
+						var h = g.target;
+						h.src = h.dataset.src;
+						h.classList.remove("lazy");
+						d.unobserve(h);
+					}
+				});
+			},
+			{ rootMargin: "0px 100px 50% 0px" }
+		);
+		b.forEach(function (e) {
+			d.observe(e);
+		});
+	} else {
+		var c;
+		b = document.querySelectorAll(".lazy");
+		function a() {
+			if (c) {
+				clearTimeout(c);
+			}
+			c = setTimeout(function () {
+				var e = window.scrollY;
+				b.forEach(function (f) {
+					if (f.offsetTop < window.innerHeight + e) {
+						f.src = f.dataset.src;
+						f.classList.remove("lazy");
+					}
+				});
+				if (b.length == 0) {
+					document.removeEventListener("scroll", a);
+					window.removeEventListener("resize", a);
+					window.removeEventListener("orientationChange", a);
+				}
+			}, 20);
+		}
+		document.addEventListener("scroll", a);
+		window.addEventListener("resize", a);
+		window.addEventListener("orientationChange", a);
+	}
 });

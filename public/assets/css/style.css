@@ -9,11 +9,11 @@
 }
 @font-face {
 	font-family: "Open Sans Regular";
-	src: url("OpenSans-Regular.ttf");
+	src: url("OpenSans-Regular.woff2");
 }
 @font-face {
 	font-family: var(--heading-font);
-	src: url("Poppins-Regular.ttf");
+	src: url("Poppins-Regular.woff2");
 }
 html {
 	font-size: 16px;

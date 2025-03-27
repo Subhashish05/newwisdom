@@ -9,8 +9,12 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
+    
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
+    <link rel="preload" href="<?php echo base_url('/assets/css/style.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/style.css') ?>">
     <style>
         .gallery_preview {
@@ -97,7 +101,7 @@
                 echo '
                     <div class="col-6 col-md-3 p-3">
                         <div class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-25 h-100 rounded-2 overflow-hidden">
-                            <img src="' . base_url('assets/img/gallery/' . $image->path) . '" alt="gallery" class="img-fluid" onclick="show_img(this, ' . $i . ')">
+                            <img data-src="' . base_url('assets/img/gallery/' . $image->path) . '" alt="gallery" class="img-fluid lazy" onclick="show_img(this, ' . $i . ')">
                         </div>
                     </div>
                 ';
