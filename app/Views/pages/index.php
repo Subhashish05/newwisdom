@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to New Wisdom Academy</title>
     <meta name="description" content="New Wisdom Academy is a laudable initiative by the ‘Aarna-Bilvani Educational Society’ to promote quality and modern education to children of our country, especially of Ghatsila, Galudih, Jamshedpur and adjoining areas.">
-   
-    <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
-    <link rel="preload" href="<?php echo base_url('assets/img/home/mob_banner1.webp') ?>" as="image">
 
-    <link rel="preload" href="<?php echo base_url('/assets/css/OpenSans-Regular.woff2') ?>"as="font" type="font/woff2">
-    <link rel="preload" href="<?php echo base_url('/assets/css/Poppins-Regular.woff2') ?>"as="font" type="font/woff2">
+    <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
+
+    <link rel="preload" href="<?php echo base_url('/assets/css/OpenSans-Regular.woff2') ?>" as="font" type="font/woff2">
+    <link rel="preload" href="<?php echo base_url('/assets/css/Poppins-Regular.woff2') ?>" as="font" type="font/woff2">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
@@ -31,38 +30,7 @@
         <section class="position-relative">
             <h2 class="main_title">Wisdom</h2>
             <div class="main_banner container">
-                <div class="mob_banner">
-                    <img src=" " alt="mobile banner" data-src2="<?php echo base_url('assets/img/home/mob_banner1.webp') ?>" data-mob_banner_index="1" class="active">
-                    <img src=" " alt="mobile banner" data-src2="<?php echo base_url('assets/img/home/mob_banner2.webp') ?>" data-mob_banner_index="2">
-                    <img src=" " alt="mobile banner" data-src2="<?php echo base_url('assets/img/home/mob_banner3.webp') ?>" data-mob_banner_index="3">
-                </div>
-                <script>
-                    let crt_bnr = 1;
-                    let nxt_bnr = crt_bnr + 1;
-                    const mob_banners = document.querySelectorAll('[data-mob_banner_index]');
-
-                    function mob_banner(cb, nb) {
-                        let banner = document.querySelector(`[data-mob_banner_index="${cb}"]`)
-                        let nxt_banner = document.querySelector(`[data-mob_banner_index="${nb}"]`)
-                        if (banner.src == '<?php echo base_url() ?>') banner.src = banner.getAttribute('data-src2');
-                        if (nxt_banner.src == '<?php echo base_url() ?>') nxt_banner.src = nxt_banner.getAttribute('data-src2');
-                        mob_banners.forEach((e) => {
-                            e.classList.remove('active', 'next')
-                        });
-                        banner.classList.add('active');
-                        nxt_banner.classList.add('next');
-                        return;
-                    }
-                    mob_banner(1, 2);
-                    setInterval(() => {
-                        crt_bnr++;
-                        if (crt_bnr > 3) crt_bnr = 1;
-                        nxt_bnr = crt_bnr + 1;
-                        if (nxt_bnr > 3) nxt_bnr = 1
-                        mob_banner(crt_bnr, nxt_bnr);
-                    }, 5000);
-                </script>
-                <div class="col-12 col-md-7" data-observe="leftIn">
+                <div class="col-12 col-md-7">
                     <h2 class="main_banner_text">
                         Shaping Futures with <span>Wisdom</span> & <span>Excellence</span>
                     </h2>
@@ -70,7 +38,9 @@
                         Where wisdom meets excellence! At New Wisdom Academy, we nurture young minds with top-notch academics, smart classrooms, and modern facilities. With expert teachers and a student-focused approach, we shape bright futures. Enroll today and watch your child thrive!
                     </p>
                     <button type="button" class="btn-theme banner_btn d-inline my-5" onclick="openEnroll()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                        </svg>
                         Enroll Today
                     </button>
                 </div>
@@ -120,16 +90,28 @@
             </div>
         </section>
         <!-- gallery -->
-        <div class="gallery_preview">
-            <div class="text-end col-12">
-                <i class="fa fa-xmark gallery_close" onclick="close_preview()"></i>
+        <section class="gallery_preview">
+            <div class="text-end col-12 position-absolute" style="top: 1rem; right: 1rem">
+                <button type="button" title="Close" onclick="close_preview()" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#ffffff" height="40px" class="gallery_close">
+                        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </button>
             </div>
-            <button type="button" onclick="get_prev_img(this)"><i class="fa fa-caret-left"></i></button>
+            <button type="button" onclick="get_prev_img(this)" title="Previous Image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#ffffff" height="20px">
+                    <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
+            </button>
             <div data-gallery="" class="flex-grow-1">
             </div>
-            <button type="button" onclick="get_next_img(this)"><i class="fa fa-caret-right"></i></button>
+            <button type="button" onclick="get_next_img(this)" title="Next Image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#ffffff" height="20px">
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+            </button>
             <div class="text-center col-12 text-white"><span data-current_img=""></span>/10</div>
-        </div>
+        </section>
         <section class="container py-50 px-20">
             <div class="masonary">
                 <div class="masonary_img1 " data-observe="zoomIn">
@@ -165,7 +147,9 @@
             </div>
             <div class="text-end">
                 <a href="/gallery" class="text-highlight">OUR GALLERY
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem">
+                        <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                    </svg>
                 </a>
             </div>
         </section>
@@ -211,11 +195,17 @@
                             <tr class="bg-theme text-white fw-bold">
                                 <th colspan="7">
                                     <div class="d-inline-flex col-12 justify-content-between">
-                                        <button type="button" class="btn text-white" onclick="getMonth('prev')"><i
-                                                class="fa fa-caret-left"></i></button>
+                                        <button type="button" class="btn text-white" onclick="getMonth('prev')" title="Previous Month">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#ffffff" height="1rem">
+                                                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                                            </svg>
+                                        </button>
                                         <h4 data-month="" class="mt-2"></h4>
-                                        <button type="button" class="btn text-white" onclick="getMonth('next')"><i
-                                                class="fa fa-caret-right"></i></button>
+                                        <button type="button" class="btn text-white" onclick="getMonth('next')" title="Next Month">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#ffffff" height="1rem">
+                                                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                            </svg>
+                                        </button>
                                     </div>
                                 </th>
                             </tr>
@@ -314,8 +304,10 @@
                     </div>
                 </div>
                 <div class="col-12 text-end">
-                    <a href="/notice" class="text-highlight">NOTICE BOARD 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg> </a>
+                    <a href="/notice" class="text-highlight">NOTICE BOARD
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem">
+                            <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                        </svg> </a>
                 </div>
             </div>
         </section>
@@ -380,33 +372,33 @@
                 </div>
             </div>
         </section>
-        <!-- event -->
+        <!-- article -->
         <section class="container py-50 px-20">
             <div class="col-12 col-md-8">
-                <h2 class="section_title left_heading">Our <span class="text-theme">Events</span> & Celebrations</h2>
+                <h2 class="section_title left_heading">Our <span class="text-theme">Articles</span></h2>
                 <p class="section_desc mx-0">
                     Our school inaugurates events with enthusiasm, bringing students, teachers, and guests together to celebrate learning, achievements, and community spirit.
                 </p>
             </div>
             <div class="d-flex flex-wrap mt-3">
-                <?php 
-                    foreach($topNews as $news){
-                        echo '
+                <?php
+                foreach ($topArticle as $article) {
+                    echo '
                             <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
                                 <div>
-                                    <img data-src="'. base_url('/assets/img/'.$news['img']).'" alt="News article" class="news_img mb-2 lazy">
-                                    <h3 class="card_title">'.$news['heading'].'</h3>
-                                    <p class="card_desc">'.$news['description'].'</p>
+                                    <img data-src="' . base_url('/assets/img/' . $article['img']) . '" alt="Article Image" class="article_img mb-2 lazy">
+                                    <h3 class="card_title">' . $article['heading'] . '</h3>
+                                    <p class="card_desc">' . $article['description'] . '</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <p class="event_time">'.$news['date'].'</p>
-                                        <a href="/news/'.$news['title'].'" class="text-highlight">Read More 
+                                        <p class="event_time">' . $article['date'] . '</p>
+                                        <a href="/article/' . $article['title'] . '" class="text-highlight">Read Article 
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#135e9e" height="1rem"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         ';
-                    }
+                }
                 ?>
             </div>
         </section>

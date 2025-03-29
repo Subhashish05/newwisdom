@@ -5,16 +5,16 @@ use CodeIgniter\Model;
 
 class Backend extends Model{
     protected $desciption = 'description';
-    public function getNews($title) {
+    public function getArticle($title) {
         $db = db_connect();
-        return $db->query('select * from news where title ="'.$title.'"')->getResult('array')[0];
+        return $db->query('select * from article where title ="'.$title.'"')->getResult('array')[0];
     }
-    public function getTopNews() {
+    public function getTopArticle() {
         $db = db_connect();
-        return $db->query('select * from news ORDER BY date ASC LIMIT 3')->getResult('array');
+        return $db->query('select * from article ORDER BY date ASC LIMIT 3')->getResult('array');
     }
-    public function getAllNews($offset) {
+    public function getAllArticle($offset) {
         $db = db_connect();
-        return $db->query('select * from news ORDER BY date ASC LIMIT 6 OFFSET '.$offset)->getResult('array');
+        return $db->query('select * from article ORDER BY date ASC LIMIT 6 OFFSET '.$offset)->getResult('array');
     }
 }

@@ -11,9 +11,9 @@ $routes->get('/', [Pages::class, 'index']);
 $routes->get('/teachers', [Pages::class, 'teachers']);
 $routes->get('/gallery', [Pages::class, 'gallery']);
 $routes->get('/notice', [Pages::class, 'notice']);
-$routes->get('/event', [Pages::class, 'event']);
-$routes->get('/event/(:segment)', [Pages::class, 'event/$1']);
-$routes->get('/news/(:segment)', [Pages::class, 'news/$1']);
+$routes->get('/articles', [Pages::class, 'articles']);
+$routes->get('/articles/(:segment)', [Pages::class, 'articles/$1']);
+$routes->get('/article/(:segment)', [Pages::class, 'article/$1']);
 $routes->get('/(:segment)', [Pages::class, 'page/$1']);
 
 $routes->post('/footer_enquiry', [BackendController::class, 'footer_enquiry']);

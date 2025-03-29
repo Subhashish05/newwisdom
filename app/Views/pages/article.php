@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newspaper</title>
+    <title><?php echo $article['heading']; ?></title>
    
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
     
@@ -57,7 +57,7 @@
             margin-bottom: 1rem;
         }
 
-        .news_img {
+        .article_img {
             border-radius: .25rem;
             width: 100%;
             aspect-ratio: 16/9;
@@ -65,7 +65,7 @@
             object-position: center;
         }
 
-        .news.card_title {
+        .article.card_title {
             font-family: 'Times New Roman', Times, serif;
             font-size: .75rem;
             font-weight: 600;
@@ -75,7 +75,7 @@
             margin-bottom: 0;
         }
         @media (width < 768px) {
-            .news_img {
+            .article_img {
                 margin-top: 1rem;
             }
         }
@@ -86,24 +86,24 @@
     <?php include 'template/header.php'; ?>
     <main class="container mt-5">
         <section class="d-flex flex-wrap">
-            <article class="newspaper">
+            <article class="article">
                 <h1 class="headline"><?php echo $article['heading']; ?></h1>
                 <div>
-                    <img src="<?php echo base_url('/assets/img/' . $article['img']); ?>" alt="<?php echo $article['title']; ?>" class="img-fluid my-3" style="aspect-ratio: 16/9;">
+                    <img src="<?php echo base_url('/assets/img/' . $article['img']); ?>" alt="<?php echo $article['title']; ?>" class="img-fluid my-3" style="aspect-ratio: 16/9; object-fit: cover;">
                 </div>
                 <div class="content">
                     <?php echo $article['body']; ?>
                 </div>
             </article>
             <aside>
-                <h2 class="text-center">Latest News</h2>
+                <h2 class="text-center">Latest Article</h2>
                 <?php
-                foreach ($topNews as $news) {
+                foreach ($topArticle as $Article) {
                     echo '
                             <div class="pb-3">
-                                <a href="/news/' . $news['title'] . '">
-                                    <img src="' . base_url('/assets/img/' . $news['img']) . '" alt="News article" class="news_img mb-2">
-                                    <h3 class="news card_title">' . $news['heading'] . '</h3>
+                                <a href="/article/' . $Article['title'] . '">
+                                    <img src="' . base_url('/assets/img/' . $Article['img']) . '" alt="article image" class="article_img mb-2">
+                                    <h3 class="article card_title">' . $Article['heading'] . '</h3>
                                 </a>
                             </div>
                         ';
