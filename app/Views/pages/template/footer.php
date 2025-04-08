@@ -36,7 +36,7 @@
                 <img data-src="<?php echo base_url('/assets/img/logo.webp') ?>" alt="New Wisdom Academy" title="New Wisdom Academy" class="img-fluid lazy">
             </a>
             <p class="card_desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet a velit praesentium tempora ipsa repellat dolores doloremque, nostrum rem facilis?
+                New Wisdom Academy offers quality education with a focus on holistic learning, experienced faculty, and student-centered teaching to help learners achieve academic excellence.
             </p>
         </div>
         <!-- contact details -->
