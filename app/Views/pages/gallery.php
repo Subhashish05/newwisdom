@@ -33,7 +33,11 @@
             align-content: space-between;
             flex-wrap: wrap;
         }
-
+        @media (width <=360px) {
+            .gallery_preview.show {
+                padding: 1.5rem 0;
+            }
+        }
         .gallery_close,
         .gallery_preview>button {
             cursor: pointer;
@@ -77,6 +81,7 @@
                 height: calc(100vh - 10rem);
                 width: 75%;
             }
+
             .gallery_preview.show {
                 padding: .25rem;
             }

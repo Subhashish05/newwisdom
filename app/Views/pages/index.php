@@ -53,7 +53,7 @@
         <!-- about -->
         <section class="container py-50 px-20">
             <div class="text-center">
-                <h2 class="section_title">Welcome to <span class="text-theme">New Wisdom</span></h2>
+                <h2 class="section_title">Welcome to <span class="text-theme">New Wisdom Academy</span></h2>
                 <p class="section_desc">
                     A place where young minds grow, dreams soar, and excellence thrives! New Wisdom Academy, run by the Aarna-Bilvani Educational Society, follows the CBSE pattern, blending academics with real-world skills. With a spacious campus, modern sports facilities, and dedicated teachers, we ensure every child shines. Plus, our affordable transport makes quality education accessible to all!
                 </p>
