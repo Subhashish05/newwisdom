@@ -24,7 +24,7 @@ body {
 	font-family: "Open Sans Regular";
 }
 body:has(.gallery_preview.show),
-body:has(.enrollment_form.show){
+body:has(.enrollment_form.show) {
 	height: 100vh;
 	overflow: hidden;
 }
@@ -54,7 +54,7 @@ h3 {
 .text-highlight {
 	color: var(--highlight) !important;
 }
-.text-justify{
+.text-justify {
 	text-align: justify !important;
 }
 .bg-theme {
@@ -174,21 +174,41 @@ button.btn-theme {
 	font-weight: 400;
 }
 .menu {
-	display: flex;
-	justify-content: space-between;
 	padding: 1rem 0;
 }
-@media (width < 786px) {
-	.top_bar {
-		padding: .25rem 0;
+@media (width >= 786px) {
+	.top_bar.fixed + .menu {
+		position: fixed;
+		width: inherit;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #fff;
+		z-index: 20;
+		box-shadow: 0 0.15rem 0.25rem #00000025;
 	}
-	.menu {
+}
+@media (width < 786px) {
+	header{
+		height: 77px;
+	}
+	.top_bar {
+		padding: 0.25rem 1rem;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 20;
+		background-color: #ffffff;
+	}
+	.menu{
 		justify-content: flex-start;
 		flex-direction: column;
 		position: fixed;
 		width: 100vw;
 		height: 100vh;
-		background: #ddd;
+		background: #eee;
 		left: -100vw;
 		top: 0;
 		z-index: 12;
@@ -244,7 +264,7 @@ button.btn-theme {
 	margin: 0 0.5rem;
 	transition: all var(--transition-duration) ease;
 }
-.social_media_logo > svg{
+.social_media_logo > svg {
 	fill: #fff;
 	height: 1.3rem;
 	width: 1.3rem;
@@ -282,7 +302,7 @@ button.btn-theme {
 .menu_btn.active span.bar3 {
 	transform: translateY(-8px) rotate(-135deg);
 }
-.enrollment_form{
+.enrollment_form {
 	position: fixed;
 	width: clamp(350px, 95%, 500px);
 	max-height: calc(100vh - 40px);
@@ -291,36 +311,36 @@ button.btn-theme {
 	left: 100%;
 	z-index: 20;
 	background-color: #fff;
-	border-radius: .75rem;
+	border-radius: 0.75rem;
 	border: 2px solid var(--highlight);
 	box-shadow: 0 0 1rem -0.15rem #135d9e83;
 	padding: 1.5rem 1rem;
 	transition: left var(--transition-duration) ease;
 }
-.enrollment_form::-webkit-scrollbar{
-	width: .25rem;
+.enrollment_form::-webkit-scrollbar {
+	width: 0.25rem;
 	background-color: #00000025;
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 }
-.enrollment_form::-webkit-scrollbar-thumb{
+.enrollment_form::-webkit-scrollbar-thumb {
 	width: 100%;
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 	background-color: var(--highlight);
 }
-.enrollment_form.show{
+.enrollment_form.show {
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
 }
-.enroll_form_label{
+.enroll_form_label {
 	position: absolute;
-	top: -.5rem;
+	top: -0.5rem;
 	left: 2rem;
-	font-size: .75rem;
+	font-size: 0.75rem;
 	background-color: #fff;
 	color: var(--highlight);
 }
 /*=========================================== Main =========================================== */
-.hero_section{
+.hero_section {
 	background-color: #ffefe6;
 	display: flex;
 	flex-direction: column;
@@ -333,7 +353,7 @@ button.btn-theme {
 	padding: 4rem 0;
 	margin-bottom: 2rem;
 }
-.hero_section *{
+.hero_section * {
 	color: var(--theme-color);
 	text-align: center;
 }
@@ -343,7 +363,9 @@ button.btn-theme {
 	justify-content: center;
 	align-items: center;
 }
-[data-observe] {
+[data-observe="zoomIn"],
+[data-observe="fadeIn"],
+[data-observe="leftIn"] {
 	opacity: 0;
 }
 @keyframes zoomIn {
@@ -481,24 +503,24 @@ footer a.card_desc:hover {
 	color: var(--highlight);
 	padding-left: 1rem;
 }
-.footer_bottom{
+.footer_bottom {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.5rem 0;
 }
-.footer_bottom > p{
-	font-size: .75rem;
+.footer_bottom > p {
+	font-size: 0.75rem;
 	color: var(--desc-color);
 }
 @media (width < 768px) {
 	footer a.card_desc {
 		font-size: 1rem;
 	}
-	.footer_bottom{
+	.footer_bottom {
 		flex-direction: column-reverse;
 	}
-	.footer_bottom > p{
-		margin-top: .75rem;
+	.footer_bottom > p {
+		margin-top: 0.75rem;
 	}
 }

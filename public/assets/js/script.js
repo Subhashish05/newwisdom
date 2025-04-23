@@ -14,7 +14,13 @@ const Observer = new IntersectionObserver(
 					entry.target.classList.add("leftIn");
 					Observer.unobserve(entry.target);
 				}
+				if (entry.target.getAttribute("data-observe") == "fixed") {
+					entry.target.classList.remove("fixed");
+				}
 			} else {
+				if (entry.target.getAttribute("data-observe") == "fixed") {
+					entry.target.classList.add("fixed");
+				}
 			}
 		});
 	},
