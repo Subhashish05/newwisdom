@@ -5,7 +5,7 @@
 /vendor/
 /node_modules/
 /writable/logs/*
-/writable/cache/*
+/writable/cache/index
 /writable/debugbar/*
 /writable/session/*
 /.well-known/
