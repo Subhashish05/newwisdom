@@ -28,7 +28,9 @@
             font-size: 1.35rem;
             font-weight: 600;
         }
-
+        .event_time{
+            margin-bottom: 0;
+        }
         @media (width < 768px) {
             .article_img {
                 margin-top: 1rem;

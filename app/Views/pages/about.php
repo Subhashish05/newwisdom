@@ -85,7 +85,7 @@
                         <li class="mb-3 lh-sm"><b class="text-highlight">Personalized Attention & Small Class Sizes:</b> Individual guidance ensures that each student gets the support they need.</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-6 px-3">
+                <div class="col-12 col-md-6 px-3 d-flex align-items-center">
                     <img data-src="<?php echo base_url('assets/img/about/why_choose.webp') ?>" alt="why choose us" class="lazy img-fluid">
                 </div>
             </div>            

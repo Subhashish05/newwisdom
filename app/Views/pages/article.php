@@ -26,6 +26,9 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 2.5rem;
         }
+        .event_time{
+            margin-bottom: 0;
+        }
         @media (width > 480px) {
             article {
                 width: calc(100% - 280px);
