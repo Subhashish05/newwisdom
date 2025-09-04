@@ -48,11 +48,11 @@
                 foreach ($allArticle as $article) {
                     echo '
                             <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
-                                <div>
+                                <div class="shadow rounded-3">
                                     <img data-src="' . base_url('/assets/img/' . $article['img']) . '" alt="article image" class="lazy article_img mb-2">
-                                    <h3 class="card_title">' . $article['heading'] . '</h3>
-                                    <p class="card_desc">' . $article['description'] . '</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card_title px-2">' . $article['heading'] . '</h3>
+                                    <p class="card_desc px-2">' . $article['description'] . '</p>
+                                    <div class="d-flex justify-content-between align-items-center p-3 pt-0">
                                         <p class="event_time">' . $article['date'] . '</p>
                                         <a href="/article/' . $article['title'] . '" class="text-highlight">Read Article 
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#135e9e" height="1rem"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>

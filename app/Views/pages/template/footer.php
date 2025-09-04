@@ -108,7 +108,7 @@
     </div>
     <div class="container footer_bottom px-2">
         <p class="mb-0 text-center">
-            &copy; Copyrights <?php echo date('Y') ?> New Wisdom Academy All rights reserved | Developed by <a href="https://portfolio-subhashish-99.netlify.app/" class="text-decoration-underline" target="_blank">Subhashish</a>
+            &copy; Copyrights <?php echo date('Y') ?> New Wisdom Academy All rights reserved | Developed by <a href="https://spfreelance.vercel.app/" class="text-decoration-underline" target="_blank">spfreelance</a>
         </p>
         <div class="d-flex">
             <a href="https://www.facebook.com/NewWisdomAcademy" title="facebook" class="social_media_logo" target="_blank">

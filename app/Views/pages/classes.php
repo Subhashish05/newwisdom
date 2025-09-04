@@ -46,8 +46,8 @@
                 <div class="col-12 col-md-6">
                     <img data-src="<?php echo base_url('/assets/img/primary_class.jpg') ?>" alt="" class="img-fluid h-100 lazy">
                 </div>
-                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: #ffefee;">
-                    <h2 class="card_title fs-2" style="color: #e77e79;">
+                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: hsla(10, 100%, 95%, 1.00);">
+                    <h2 class="card_title fs-2" style="color: hsla(7, 100%, 70%, 1.00);">
                         Primary Classes (Grades 1-5)
                     </h2>
                     <p class="card_desc text-justify">
@@ -60,8 +60,8 @@
                 </div>
             </div>
             <div class="d-flex flex-wrap-reverse mb-5">
-                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: #e8f4ff;">
-                    <h2 class="card_title fs-2" style="color: #005db3;">
+                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: hsla(209, 100%, 95%, 1.00);">
+                    <h2 class="card_title fs-2" style="color: hsla(209, 100%, 40%, 1.00);">
                         Middle School Classes (Grades 6-8)
                     </h2>
                     <p class="card_desc text-justify">
@@ -80,8 +80,8 @@
                 <div class="col-12 col-md-6">
                     <img data-src="<?php echo base_url('/assets/img/high_class.jpg') ?>" alt="" class="img-fluid h-100 lazy">
                 </div>
-                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: #ebfff7;">
-                    <h2 class="card_title fs-2" style="color: #066d3f;">
+                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: hsla(153, 100%, 97%, 1.00);">
+                    <h2 class="card_title fs-2" style="color: hsla(153, 90%, 35%, 1.00);">
                         High School Classes (Grades 9-10)
                     </h2>
                     <p class="card_desc text-justify">
@@ -94,8 +94,8 @@
                 </div>
             </div>
             <div class="d-flex flex-wrap-reverse mb-5">
-                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: #ebf2ff;">
-                    <h2 class="card_title fs-2" style="color: #2f5691;">
+                <div class="col-12 col-md-6 pt-3 px-3" style="background-color: hsla(216, 100%, 97%, 1.00);">
+                    <h2 class="card_title fs-2" style="color: hsla(216, 51%, 40%, 1.00);">
                         Spoken English & Personality Development
                     </h2>
                     <p class="card_desc text-justify">

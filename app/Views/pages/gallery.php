@@ -131,8 +131,8 @@
             foreach ($images as $image) {
                 echo '
                     <div class="col-6 col-md-3 p-3">
-                        <div class="d-flex align-items-center justify-content-center bg-secondary bg-opacity-25 h-100 rounded-2 overflow-hidden">
-                            <img data-src="' . base_url('assets/img/gallery/' . $image->path) . '" alt="gallery" class="img-fluid lazy" onclick="show_img(this, ' . $i . ')">
+                        <div class="d-flex align-items-center justify-content-center bg-white h-100 rounded-2 shadow">
+                            <img data-src="' . base_url('assets/img/gallery/' . $image->path) . '" alt="gallery" class="img-fluid rounded-2 lazy" onclick="show_img(this, ' . $i . ')">
                         </div>
                     </div>
                 ';

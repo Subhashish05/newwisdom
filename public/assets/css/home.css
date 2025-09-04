@@ -21,7 +21,7 @@ body {
 	position: relative;
 }
 .main_banner_text > span::before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 100%;
 	height: 2px;
@@ -94,10 +94,10 @@ body {
 	align-content: space-between;
 	flex-wrap: wrap;
 }
-@media (width <= 360px){
-    .gallery_preview.show{
-        padding: 1.5rem 0;
-    }
+@media (width <= 360px) {
+	.gallery_preview.show {
+		padding: 1.5rem 0;
+	}
 }
 .gallery_close,
 .gallery_preview > button {
@@ -135,21 +135,22 @@ div[data-gallery] {
 @media (width >= 768px) {
 	.masonary {
 		display: grid;
-		gap: 8px;
+		gap: 10px;
 		grid-template-columns: repeat(10, minmax(9.091%, auto));
 		grid-template-rows: repeat(10, minmax(50px, auto));
-		margin: 5rem auto;
+		margin: 2rem auto;
 	}
 	.masonary > div {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		overflow: hidden;
 		cursor: pointer;
-		box-shadow: 0 0.5rem 0.75rem #00000038;
+		box-shadow: inset 0px 2px 1px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.1),
+			0px 6px 6px hsla(0, 0%, 0%, 0.2);
 		border-radius: 8px;
 	}
 	.masonary > div > img {
+		border-radius: 8px;
 		flex-shrink: 0;
 		width: auto;
 		height: 100%;
@@ -223,7 +224,7 @@ div[data-gallery] {
 	position: relative;
 }
 .left_heading::before {
-	content: "";
+	content: '';
 	position: absolute;
 	top: -40px;
 	left: -70px;
@@ -236,18 +237,21 @@ div[data-gallery] {
 .calender_cell {
 	padding: 0.75rem 0;
 	text-align: center;
-	background-color: #0000001e;
-	border: 2px solid #3d3d3d80;
+	color: hsl(0, 0%, 20%);
+	background-color: hsl(0, 0%, 95%);
+	border: 1px solid hsl(0, 0%, 60%);
 }
 .calender > thead > tr.bg-theme {
-	border: 2px solid var(--theme-color);
+	border: 1px solid var(--theme-color);
 }
 .calender td {
 	cursor: pointer;
 	padding: 0.75rem 0;
 	font-weight: 700;
-	border-right: 2px solid #80808080;
-	border-bottom: 2px solid #80808080;
+	color: hsl(0, 0%, 10%);
+	background-color: hsl(0, 0%, 100%);
+	border-right: 1px solid hsl(0, 0%, 80%);
+	border-bottom: 1px solid hsl(0, 0%, 80%);
 }
 @media (width < 768px) {
 	.calender_cell {
@@ -258,22 +262,22 @@ div[data-gallery] {
 	}
 }
 .calender td.not_active {
-	color: #00000099;
+	color: hsl(0, 0%, 50%);
 }
 .calender td:hover {
-	background: #ffefe6;
+	background: hsl(20, 100%, 96%);
 	color: var(--theme-color);
 }
 .calender td:first-child {
 	border-left: 2px solid #80808080;
 }
 .calender td.active {
-	background: #daebfa;
+	background: hsl(208, 100%, 96%);
 	color: var(--highlight);
 }
 .calender td.event {
-	background: #e4ffe4;
-	color: #008000;
+	background: hsl(120, 100%, 95%);
+	color: hsl(120, 100%, 45%);
 }
 .notice_card {
 	background-color: #eef7ff;
@@ -285,7 +289,7 @@ div[data-gallery] {
 	overflow: hidden;
 }
 .notice_card::before {
-	content: "";
+	content: '';
 	position: absolute;
 	height: 100%;
 	width: 0.5rem;
@@ -343,7 +347,7 @@ div[data-gallery] {
 	z-index: 9;
 }
 .test_name::before {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -370,7 +374,7 @@ div[data-gallery] {
 	object-position: center;
 }
 .article_img + .card_title {
-	font-family: "Times New Roman", Times, serif;
+	font-family: 'Times New Roman', Times, serif;
 	font-size: 1.35rem;
 	font-weight: 600;
 }
@@ -379,6 +383,6 @@ div[data-gallery] {
 		margin-top: 1rem;
 	}
 }
-.event_time{
+.event_time {
 	margin-bottom: 0;
 }

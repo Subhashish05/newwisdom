@@ -60,28 +60,28 @@
             </div>
             <div class="d-flex flex-wrap mt-5">
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #ffefe6;">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: hsl(20, 100%, 98%);">
                         <img data-src="<?php echo base_url('/assets/img/home/icon1.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-theme">Smart Classrooms</h3>
                         <p class="card_desc"> Interactive and tech-enabled for an engaging learning environment.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #eef7ff;">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: hsl(208, 100%, 98%);">
                         <img data-src="<?php echo base_url('/assets/img/home/icon2.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-highlight">Well Qualified Teachers</h3>
                         <p class="card_desc">Experienced educators dedicated to shaping bright futures.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #ffefe6;">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: hsl(20, 100%, 98%);">
                         <img data-src="<?php echo base_url('/assets/img/home/icon3.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-theme">Latest Teaching Method</h3>
                         <p class="card_desc">Innovative, student-centric approaches for effective learning.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 px-5 px-md-3 py-3" data-observe="fadeIn">
-                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: #eef7ff;">
+                    <div class="text-center shadow p-3 rounded-2 h-100" style="background-color: hsl(208, 100%, 98%);">
                         <img data-src="<?php echo base_url('/assets/img/home/icon4.png') ?>" alt="icon" class="mb-3 lazy">
                         <h3 class="card_title text-highlight">Modern Infrastructure</h3>
                         <p class="card_desc">A well-equipped campus designed for comfort and excellence.</p>
@@ -112,45 +112,47 @@
             </button>
             <div class="text-center col-12 text-white"><span data-current_img=""></span>/10</div>
         </section>
-        <section class="container py-50 px-20">
-            <div class="masonary">
-                <div class="masonary_img1 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img1.webp') ?>" alt="Gallery Image" onclick="show_img(this, 1)" class="lazy">
+        <section class=" py-50 px-20" style="background-color: hsl(200, 80%, 98%);">
+            <div class="container">
+                <div class="masonary">
+                    <div class="masonary_img1 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img1.webp') ?>" alt="Gallery Image" onclick="show_img(this, 1)" class="lazy">
+                    </div>
+                    <div class="masonary_img2 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img2.webp') ?>" alt="Gallery Image" onclick="show_img(this, 2)" class="lazy">
+                    </div>
+                    <div class="masonary_img3 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img3.webp') ?>" alt="Gallery Image" onclick="show_img(this, 3)" class="lazy">
+                    </div>
+                    <div class="masonary_img4 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img4.webp') ?>" alt="Gallery Image" onclick="show_img(this, 4)" class="lazy">
+                    </div>
+                    <div class="masonary_img5 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img5.webp') ?>" alt="Gallery Image" onclick="show_img(this, 5)" class="lazy">
+                    </div>
+                    <div class="masonary_img6 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img6.webp') ?>" alt="Gallery Image" onclick="show_img(this, 6)" class="lazy">
+                    </div>
+                    <div class="masonary_img7 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img7.webp') ?>" alt="Gallery Image" onclick="show_img(this, 7)" class="lazy">
+                    </div>
+                    <div class="masonary_img8 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img8.webp') ?>" alt="Gallery Image" onclick="show_img(this, 8)" class="lazy">
+                    </div>
+                    <div class="masonary_img9 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img9.webp') ?>" alt="Gallery Image" onclick="show_img(this, 9)" class="lazy">
+                    </div>
+                    <div class="masonary_img10 " data-observe="zoomIn">
+                        <img data-src="<?php echo base_url('assets/img/gallery/img10.webp') ?>" alt="Gallery Image" onclick="show_img(this, 10)" class="lazy">
+                    </div>
                 </div>
-                <div class="masonary_img2 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img2.webp') ?>" alt="Gallery Image" onclick="show_img(this, 2)" class="lazy">
+                <div class="text-end">
+                    <a href="/gallery" class="text-highlight">OUR GALLERY
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem">
+                            <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="masonary_img3 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img3.webp') ?>" alt="Gallery Image" onclick="show_img(this, 3)" class="lazy">
-                </div>
-                <div class="masonary_img4 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img4.webp') ?>" alt="Gallery Image" onclick="show_img(this, 4)" class="lazy">
-                </div>
-                <div class="masonary_img5 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img5.webp') ?>" alt="Gallery Image" onclick="show_img(this, 5)" class="lazy">
-                </div>
-                <div class="masonary_img6 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img6.webp') ?>" alt="Gallery Image" onclick="show_img(this, 6)" class="lazy">
-                </div>
-                <div class="masonary_img7 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img7.webp') ?>" alt="Gallery Image" onclick="show_img(this, 7)" class="lazy">
-                </div>
-                <div class="masonary_img8 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img8.webp') ?>" alt="Gallery Image" onclick="show_img(this, 8)" class="lazy">
-                </div>
-                <div class="masonary_img9 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img9.webp') ?>" alt="Gallery Image" onclick="show_img(this, 9)" class="lazy">
-                </div>
-                <div class="masonary_img10 " data-observe="zoomIn">
-                    <img data-src="<?php echo base_url('assets/img/gallery/img10.webp') ?>" alt="Gallery Image" onclick="show_img(this, 10)" class="lazy">
-                </div>
-            </div>
-            <div class="text-end">
-                <a href="/gallery" class="text-highlight">OUR GALLERY
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#135e9e" height="1.2rem">
-                        <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
-                    </svg>
-                </a>
             </div>
         </section>
         <script>
@@ -190,7 +192,7 @@
             <div class="d-flex flex-wrap">
                 <!-- calender -->
                 <div class="col-12 col-md-6 col-lg-5">
-                    <table class="calender w-100 text-center ">
+                    <table class="calender w-100 text-center">
                         <thead>
                             <tr class="bg-theme text-white fw-bold">
                                 <th colspan="7">
@@ -210,7 +212,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th class="calender_cell bg-danger bg-opacity-25 text-danger">SUN</th>
+                                <th class="calender_cell bg-danger bg-opacity-10 text-danger">SUN</th>
                                 <th class="calender_cell">MON</th>
                                 <th class="calender_cell">TUS</th>
                                 <th class="calender_cell">WEB</th>
@@ -280,13 +282,13 @@
                 </div>
                 <!-- notice list -->
                 <div class="col-12 col-md-6 col-lg-7 ps-md-5">
-                    <div class="notice_card" data-observe="leftIn">
+                    <div class="notice_card shadow" data-observe="leftIn">
                         <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 14/01/2025 &nbsp;
                             Whole Day</div>
                         <h3 class="card_title fs-3">Happy Makar Sankranti</h3>
                         <p class="card_desc">Wishing all our students a joyful Makar Sankranti! May this festival bring happiness, success, and new opportunities. Enjoy the kites, sweets, and celebrations with your loved ones. Stay safe, stay blessed, and keep soaring high like the kites in the sky</p>
                     </div>
-                    <div class="notice_card" data-observe="leftIn">
+                    <div class="notice_card shadow" data-observe="leftIn">
                         <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 26/01/2025 &nbsp;
                             07:30am to 12:30pm</div>
                         <h3 class="card_title fs-3">Happy Republic Day</h3>
@@ -294,7 +296,7 @@
                             Wishing all our students a proud and joyous Republic Day! Let’s honor the values of our Constitution and strive to be responsible citizens. May this day inspire you to contribute to the nation’s growth with dedication and integrity. Jai Hind
                         </p>
                     </div>
-                    <div class="notice_card" data-observe="leftIn">
+                    <div class="notice_card shadow" data-observe="leftIn">
                         <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 02/02/2025 &nbsp;
                             07:30am to 12:30pm</div>
                         <h3 class="card_title fs-3">Happy Basant Panchami</h3>
@@ -312,63 +314,65 @@
             </div>
         </section>
         <!-- testimonials -->
-        <section class="container py-50 px-20">
-            <div class="text-center mb-5">
-                <h2 class="section_title"><span class="text-theme">Words</span> from Students & Parents</h2>
-                <p class="section_desc">
-                    Read what our students, parents, and teachers have to say about their experiences at our school. Their stories reflect our commitment to academic excellence, personal growth, and a nurturing learning environment.
-                </p>
-            </div>
-            <div class="position-relative">
-                <div class="slide_container">
-                    <div class="slider" data-slider="" data-observe="zoomIn">
-                        <div class="slides">
-                            <p class="testimonial">
-                                Our experience with this school has been wonderful. The teachers are dedicated, and the curriculum is well-structured. My son has grown academically and personally, thanks to the school's supportive environment. I appreciate the focus on values and overall development.
-                            </p>
-                            <h4 class="test_name">Rajesh Verma</h4>
-                            <span class="test_prof">Parent of Class 8 Student</span>
-                        </div>
-                        <div class="slides">
-                            <p class="testimonial">
-                                I have been a student here for years, and it has been an amazing journey. The teachers are always encouraging, and the extracurricular activities help us explore our talents. The school has given me confidence and skills that will help me in the future.
-                            </p>
-                            <h4 class="test_name">Priya Sharma</h4>
-                            <span class="test_prof">Class 10 Student</span>
-                        </div>
-                        <div class="slides">
-                            <p class="testimonial">
-                                Choosing this school for my daughter was the best decision. She enjoys learning and is excited about coming to school every day. The focus on academics, sports, and creativity ensures well-rounded development. The staff is approachable and always ready to help.
-                            </p>
-                            <h4 class="test_name">Sunita Gupta</h4>
-                            <span class="test_prof">Parent of Class 5 Student</span>
-                        </div>
-                        <div class="slides">
-                            <p class="testimonial">The school has played a crucial role in shaping my future. The teachers not only focus on studies but also guide us in career choices and personal growth. The learning environment is positive, and the facilities are excellent. I will always be grateful for my time here.</p>
-                            <h4 class="test_name">Aniket Manna</h4>
-                            <span class="test_prof">Class 10 Student</span>
-                        </div>
-                        <div class="slides">
-                            <p class="testimonial">
-                                As a teacher, I have seen this school nurture students into responsible and confident individuals. The emphasis on discipline, creativity, and learning makes it a great place to study and teach. The school values both academic excellence and character building, making it a perfect learning space.
-                            </p>
-                            <h4 class="test_name">Kavita Manjhi</h4>
-                            <span class="test_prof">Teacher – 6 Years at the School</span>
-                        </div>
-                        <div class="slides">
-                            <p class="testimonial">
-                                This school provides the perfect balance of academics and extracurricular activities. My son has shown remarkable improvement in both confidence and knowledge. The teachers are caring and ensure that every child gets the attention they need. We are truly happy with our decision to enroll him here.
-                            </p>
-                            <h4 class="test_name">Arvind Singh</h4>
-                            <span class="test_prof">Parent of Class 3 Student</span>
+        <section class="py-50 px-20" style="background-color: hsl(200, 80%, 98%);">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section_title"><span class="text-theme">Words</span> from Students & Parents</h2>
+                    <p class="section_desc">
+                        Read what our students, parents, and teachers have to say about their experiences at our school. Their stories reflect our commitment to academic excellence, personal growth, and a nurturing learning environment.
+                    </p>
+                </div>
+                <div class="position-relative">
+                    <div class="slide_container">
+                        <div class="slider" data-slider="" data-observe="zoomIn">
+                            <div class="slides shadow">
+                                <p class="testimonial">
+                                    Our experience with this school has been wonderful. The teachers are dedicated, and the curriculum is well-structured. My son has grown academically and personally, thanks to the school's supportive environment. I appreciate the focus on values and overall development.
+                                </p>
+                                <h4 class="test_name">Rajesh Verma</h4>
+                                <span class="test_prof">Parent of Class 8 Student</span>
+                            </div>
+                            <div class="slides shadow">
+                                <p class="testimonial">
+                                    I have been a student here for years, and it has been an amazing journey. The teachers are always encouraging, and the extracurricular activities help us explore our talents. The school has given me confidence and skills that will help me in the future.
+                                </p>
+                                <h4 class="test_name">Priya Sharma</h4>
+                                <span class="test_prof">Class 10 Student</span>
+                            </div>
+                            <div class="slides shadow">
+                                <p class="testimonial">
+                                    Choosing this school for my daughter was the best decision. She enjoys learning and is excited about coming to school every day. The focus on academics, sports, and creativity ensures well-rounded development. The staff is approachable and always ready to help.
+                                </p>
+                                <h4 class="test_name">Sunita Gupta</h4>
+                                <span class="test_prof">Parent of Class 5 Student</span>
+                            </div>
+                            <div class="slides shadow">
+                                <p class="testimonial">The school has played a crucial role in shaping my future. The teachers not only focus on studies but also guide us in career choices and personal growth. The learning environment is positive, and the facilities are excellent. I will always be grateful for my time here.</p>
+                                <h4 class="test_name">Aniket Manna</h4>
+                                <span class="test_prof">Class 10 Student</span>
+                            </div>
+                            <div class="slides shadow">
+                                <p class="testimonial">
+                                    As a teacher, I have seen this school nurture students into responsible and confident individuals. The emphasis on discipline, creativity, and learning makes it a great place to study and teach. The school values both academic excellence and character building, making it a perfect learning space.
+                                </p>
+                                <h4 class="test_name">Kavita Manjhi</h4>
+                                <span class="test_prof">Teacher – 6 Years at the School</span>
+                            </div>
+                            <div class="slides shadow">
+                                <p class="testimonial">
+                                    This school provides the perfect balance of academics and extracurricular activities. My son has shown remarkable improvement in both confidence and knowledge. The teachers are caring and ensure that every child gets the attention they need. We are truly happy with our decision to enroll him here.
+                                </p>
+                                <h4 class="test_name">Arvind Singh</h4>
+                                <span class="test_prof">Parent of Class 3 Student</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <button type="button" data-prev="" onclick="slider_prev()"><img
-                        src="<?php echo base_url('/assets/img/left.png') ?>" alt="previous" title="previous"></button>
-                <button type="button" data-next="" onclick="slider_next()"><img
-                        src="<?php echo base_url('/assets/img/right.png') ?>" alt="next" title="next"></button>
-                <div data-pagination="">
+                    <button type="button" data-prev="" onclick="slider_prev()"><img
+                            src="<?php echo base_url('/assets/img/left.png') ?>" alt="previous" title="previous" /></button>
+                    <button type="button" data-next="" onclick="slider_next()"><img
+                            src="<?php echo base_url('/assets/img/right.png') ?>" alt="next" title="next" /></button>
+                    <div data-pagination="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -384,12 +388,12 @@
                 <?php
                 foreach ($topArticle as $article) {
                     echo '
-                            <div class="col-12 col-md-4 p-3" data-observe="fadeIn">
-                                <div>
+                            <div class="col-12 col-md-4 p-3 " data-observe="fadeIn">
+                                <div class="shadow bg-white rounded-2">
                                     <img data-src="' . base_url('/assets/img/' . $article['img']) . '" alt="Article Image" class="article_img mb-2 lazy">
-                                    <h3 class="card_title">' . $article['heading'] . '</h3>
-                                    <p class="card_desc">' . $article['description'] . '</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="card_title px-1">' . $article['heading'] . '</h3>
+                                    <p class="card_desc px-1">' . $article['description'] . '</p>
+                                    <div class="d-flex justify-content-between align-items-center p-3 pt-0">
                                         <p class="event_time">' . $article['date'] . '</p>
                                         <a href="/article/' . $article['title'] . '" class="text-highlight">Read Article 
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#135e9e" height="1rem"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>

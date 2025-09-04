@@ -44,7 +44,7 @@
         <?php
             foreach($notices as $notice){
                 echo '
-                    <div class="notice">
+                    <div class="notice shadow">
                         <h2>'.$notice->title.'</h2>
                         <p>Date: '.($notice->date).'</p>
                         <p>'.$notice->context.'</p>
