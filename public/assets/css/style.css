@@ -8,13 +8,21 @@
 	--desc-color: hsl(0, 0%, 20%);
 }
 @font-face {
-	font-family: 'Open Sans Regular';
-	src: url('OpenSans-Regular.woff2');
+	font-family: 'Open Sans';
+	src: url('OpenSans-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
+
 @font-face {
-	font-family: var(--heading-font);
-	src: url('Poppins-Regular.woff2');
+	font-family: 'Poppins';
+	src: url('Poppins-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
+
 html {
 	font-size: 16px;
 }
@@ -23,7 +31,7 @@ body {
 	margin: 0;
 	color: hsl(0, 0%, 25%);
 	background-color: hsl(20, 1%, 99%);
-	font-family: 'Open Sans Regular';
+	font-family: 'Open Sans';
 }
 body:has(.gallery_preview.show),
 body:has(.enrollment_form.show) {
@@ -75,7 +83,8 @@ button.btn-theme {
 	line-height: 2.5rem;
 	padding: 0 3.75rem;
 	position: relative;
-	box-shadow: inset 0px 2px 1px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.1), 0px 6px 6px hsla(0, 0%, 0%, 0.2);
+	box-shadow: inset 0px 2px 1px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.1),
+		0px 6px 6px hsla(0, 0%, 0%, 0.2);
 	border-radius: 1.875rem;
 	transition: all var(--transition-duration) ease-in-out;
 }
@@ -147,8 +156,9 @@ button.btn-theme {
 		text-align: justify;
 	}
 }
-.shadow{
-	box-shadow: inset 0px 2px 1px hsla(0, 0%, 90%, 0.2), 0px 2px 2px hsla(0, 0%, 0%, 0.1), 0px 6px 6px hsla(0, 0%, 0%, 0.2) !important;
+.shadow {
+	box-shadow: inset 0px 2px 1px hsla(0, 0%, 90%, 0.2), 0px 2px 2px hsla(0, 0%, 0%, 0.1),
+		0px 6px 6px hsla(0, 0%, 0%, 0.2) !important;
 }
 /*=========================================== Header =========================================== */
 .top_bar {
@@ -256,7 +266,8 @@ button.btn-theme {
 	top: 100%;
 	height: 4px;
 	background-color: var(--highlight);
-	box-shadow: inset 0px 1px 2px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.05), 0px 4px 4px hsla(0, 0%, 0%, 0.1);
+	box-shadow: inset 0px 1px 2px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.05),
+		0px 4px 4px hsla(0, 0%, 0%, 0.1);
 	border-radius: 10px;
 	transition: all var(--transition-duration) ease;
 }
@@ -275,7 +286,8 @@ button.btn-theme {
 	width: 1.8rem;
 	border-radius: 50%;
 	margin: 0 0.5rem;
-	box-shadow: inset 0px 2px 1px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.1), 0px 6px 6px hsla(0, 0%, 0%, 0.2);
+	box-shadow: inset 0px 2px 1px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.1),
+		0px 6px 6px hsla(0, 0%, 0%, 0.2);
 	transition: all var(--transition-duration) ease;
 }
 .social_media_logo > svg {
@@ -451,7 +463,8 @@ button.btn-theme {
 	border-radius: 2.5rem;
 	background-position: 0;
 	margin: 0 auto -8.5rem;
-	box-shadow: inset 0px 2px 1px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.1), 0px 6px 6px 3px hsla(0, 0%, 0%, 0.2);
+	box-shadow: inset 0px 2px 1px hsla(0, 0%, 100%, 0.4), 0px 2px 2px hsla(0, 0%, 0%, 0.1),
+		0px 6px 6px 3px hsla(0, 0%, 0%, 0.2);
 	position: relative;
 	overflow: hidden;
 }

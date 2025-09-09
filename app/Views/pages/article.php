@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $article['heading']; ?></title>
-   
+
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
-    
+
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
@@ -19,16 +19,20 @@
             background-color: rgb(253, 238, 219);
         }
 
-        article, aside{
+        article,
+        aside {
             width: 100%;
         }
+
         .headline {
             font-family: 'Times New Roman', Times, serif;
             font-size: 2.5rem;
         }
-        .event_time{
+
+        .event_time {
             margin-bottom: 0;
         }
+
         @media (width > 480px) {
             article {
                 width: calc(100% - 280px);
@@ -41,6 +45,7 @@
                 bottom: 20px;
                 align-self: flex-end;
             }
+
             .headline {
                 font-size: 3.5rem;
             }
@@ -73,10 +78,12 @@
             font-size: .75rem;
             font-weight: 600;
         }
-        .event_time{
+
+        .event_time {
             font-size: .75rem;
             margin-bottom: 0;
         }
+
         @media (width < 768px) {
             .article_img {
                 margin-top: 1rem;

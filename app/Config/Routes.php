@@ -19,3 +19,5 @@ $routes->get('/(:segment)', [Pages::class, 'page/$1']);
 $routes->post('/footer_enquiry', [BackendController::class, 'footer_enquiry']);
 $routes->post('/enrollment_form', [BackendController::class, 'enrollment_form']);
 $routes->post('/contact_form', [BackendController::class, 'contact_form']);
+
+$routes->get('api/notices', [BackendController::class, 'getNotices']);

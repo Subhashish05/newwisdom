@@ -3,7 +3,9 @@
         <div class="col-12 col-md-4 text-md-start text-center">
             <h2 class="heading">Join us <br> and stay tuned!</h2>
             <button type="submit" class="btn btn-theme my-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                </svg>
                 Join Us
             </button>
         </div>
@@ -100,10 +102,10 @@
         </div>
         <!-- google map -->
         <div class="col-md-3 col-12">
-            <iframe
+            <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.5954984960745!2d86.40612090984092!3d22.6688654293513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f60350aa3c669f%3A0x173da1ba51ab8c26!2sNew%20Wisdom%20Academy!5e0!3m2!1sen!2sin!4v1739504675533!5m2!1sen!2sin"
                 width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
     </div>
     <div class="container footer_bottom px-2">

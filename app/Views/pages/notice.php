@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notice</title>
-   
+
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
-    
+
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
@@ -23,10 +23,12 @@
             overflow: hidden;
             border-left: .25rem solid var(--theme-color);
         }
+
         .notice h2 {
             color: var(--highlight);
             margin-bottom: .75rem;
         }
+
         .notice p {
             margin: 0;
             color: #666;
@@ -40,19 +42,19 @@
         <section class="hero_section">
             <h1 class="section_title">Notice Board</h1>
         </section>
-    <section class="container mb-5">        
-        <?php
-            foreach($notices as $notice){
+        <section class="container mb-5">
+            <?php
+            foreach ($notices as $notice) {
                 echo '
                     <div class="notice shadow">
-                        <h2>'.$notice->title.'</h2>
-                        <p>Date: '.($notice->date).'</p>
-                        <p>'.$notice->context.'</p>
+                        <h2>' . $notice->title . '</h2>
+                        <p>Date: ' . ($notice->date) . '</p>
+                        <p>' . $notice->context . '</p>
                     </div>
                 ';
             }
-        ?>
-    </section>
+            ?>
+        </section>
     </main>
     <?php include 'template/footer.php'; ?>
     <script src="<?php echo base_url('/assets/js/script.js') ?>"></script>

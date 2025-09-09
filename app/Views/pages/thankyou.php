@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
-   
+
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
-    
+
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
@@ -21,7 +21,8 @@
     <main>
         <div class="page_substitute px-3">
             <div class="shadow rounded-3 p-5 bg-theme">
-                <h1 class="heading display-1 text-white"><?php echo ucfirst($page_name)?></h1>
+                <h1 class="heading display-1 text-white mb-0">Thank You!!!</h1>
+                <p class="text-center text-white mb-0">We recieved your request. We will contact you soon...</p>
             </div>
         </div>
     </main>

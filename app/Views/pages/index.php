@@ -8,9 +8,6 @@
     <meta name="description" content="New Wisdom Academy is a laudable initiative by the ‘Aarna-Bilvani Educational Society’ to promote quality and modern education to children of our country, especially of Ghatsila, Galudih, Jamshedpur and adjoining areas.">
 
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
-
-    <link rel="preload" href="<?php echo base_url('/assets/css/OpenSans-Regular.woff2') ?>" as="font" type="font/woff2">
-    <link rel="preload" href="<?php echo base_url('/assets/css/Poppins-Regular.woff2') ?>" as="font" type="font/woff2">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
@@ -282,28 +279,17 @@
                 </div>
                 <!-- notice list -->
                 <div class="col-12 col-md-6 col-lg-7 ps-md-5">
-                    <div class="notice_card shadow" data-observe="leftIn">
-                        <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 14/01/2025 &nbsp;
-                            Whole Day</div>
-                        <h3 class="card_title fs-3">Happy Makar Sankranti</h3>
-                        <p class="card_desc">Wishing all our students a joyful Makar Sankranti! May this festival bring happiness, success, and new opportunities. Enjoy the kites, sweets, and celebrations with your loved ones. Stay safe, stay blessed, and keep soaring high like the kites in the sky</p>
-                    </div>
-                    <div class="notice_card shadow" data-observe="leftIn">
-                        <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 26/01/2025 &nbsp;
-                            07:30am to 12:30pm</div>
-                        <h3 class="card_title fs-3">Happy Republic Day</h3>
-                        <p class="card_desc">
-                            Wishing all our students a proud and joyous Republic Day! Let’s honor the values of our Constitution and strive to be responsible citizens. May this day inspire you to contribute to the nation’s growth with dedication and integrity. Jai Hind
-                        </p>
-                    </div>
-                    <div class="notice_card shadow" data-observe="leftIn">
-                        <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> 02/02/2025 &nbsp;
-                            07:30am to 12:30pm</div>
-                        <h3 class="card_title fs-3">Happy Basant Panchami</h3>
-                        <p class="card_desc">
-                            Wishing all our students a joyful Basant Panchami! May Goddess Saraswati bless you with wisdom, knowledge, and success. Let this festival bring new energy, happiness, and inspiration to your learning journey. Stay blessed and keep shining bright
-                        </p>
-                    </div>
+                    <?php
+                    foreach ($notices as $notice) {
+                        echo '
+                            <div class="notice_card shadow" data-observe="leftIn">
+                                <div class="notice_time"><i class="text-theme fa-regular fa-calendar-days"></i> ' . ($notice->date) . '</div>
+                                <h3 class="card_title fs-4">' . $notice->title . '</h3>
+                                <p class="card_desc">' . $notice->context . '</p>
+                            </div>
+                        ';
+                    }
+                    ?>
                 </div>
                 <div class="col-12 text-end">
                     <a href="/notice" class="text-highlight">NOTICE BOARD

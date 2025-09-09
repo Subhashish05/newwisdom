@@ -1,7 +1,11 @@
 <?php
+
 namespace App\Controllers;
-class BackendController extends BaseController{
-    public function footer_enquiry(){
+
+class BackendController extends BaseController
+{
+    public function footer_enquiry()
+    {
         $request = service('request');
         $name = $request->getPost('name');
         $email = $request->getPost('email');
@@ -14,14 +18,15 @@ class BackendController extends BaseController{
             'number' => $number,
             'message' => $message,
         ];
-        if($db->table('contact')->insert($qurey)){
+        if ($db->table('contact')->insert($qurey)) {
             $data['page_name'] = 'Thank You!!!';
             return view('pages/thankyou', $data);
-        } else{
+        } else {
             return redirect()->back();
         }
     }
-    public function contact_form(){
+    public function contact_form()
+    {
         $request = service('request');
         $name = $request->getPost('name');
         $email = $request->getPost('email');
@@ -34,13 +39,14 @@ class BackendController extends BaseController{
             'number' => $number,
             'message' => $message,
         ];
-        if($db->table('contact')->insert($qurey)){
+        if ($db->table('contact')->insert($qurey)) {
             return redirect()->to('/contact')->with('success', 'Form submitted Successfully!!!');
-        } else{
+        } else {
             return redirect()->back();
         }
     }
-    public function enrollment_form() {
+    public function enrollment_form()
+    {
         $request = service('request');
         $name = $request->getPost('name');
         $email = $request->getPost('email');
@@ -64,10 +70,17 @@ class BackendController extends BaseController{
             'address' => $address,
         ];
 
-        if($db->table('enrollment')->insert($qurey)){
+        if ($db->table('enrollment')->insert($qurey)) {
             return redirect()->to('/thankyou')->with('success', 'Application submitted Successfully!!!');
-        } else{
+        } else {
             return redirect()->back();
         }
+    }
+    public function getNotices()
+    {
+        $db = db_connect();
+        $data = $db->table('noticeboard')->orderBy('date', 'DESC')->get()->getResult();
+
+        return $this->response->setJSON($data);
     }
 }

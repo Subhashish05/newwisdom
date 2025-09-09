@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classes</title>
-   
+
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
-    
+
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
@@ -35,10 +35,12 @@
                 <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Interactive Learning –</span> Smart classrooms, practice tests, and real-world applications</li>
                 <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Personalized Attention –</span> Small batch sizes for better engagement</li>
                 <li class="card_title mt-3"><span class="text-success pe-2">✔</span><span class="fw-bold text-highlight">Affordable Fees –</span> Quality education at reasonable prices</li>
-            </ul>            
+            </ul>
             <div class="text-center">
                 <button type="button" class="btn-theme banner_btn d-inline-block mb-5" onclick="openEnroll()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                    </svg>
                     Enroll Today
                 </button>
             </div>
