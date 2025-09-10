@@ -19,6 +19,7 @@ class BackendController extends BaseController
             'message' => $message,
         ];
         if ($db->table('contact')->insert($qurey)) {
+            $db->table('notification')->insert(['head' => 'New Contact', 'body' => 'You received now contact enquiry from ' . $email . '.']);
             $data['page_name'] = 'Thank You!!!';
             return view('pages/thankyou', $data);
         } else {
@@ -40,6 +41,7 @@ class BackendController extends BaseController
             'message' => $message,
         ];
         if ($db->table('contact')->insert($qurey)) {
+            $db->table('notification')->insert(['head' => 'New Contact', 'body' => 'You received now contact enquiry from ' . $email . '.']);
             return redirect()->to('/contact')->with('success', 'Form submitted Successfully!!!');
         } else {
             return redirect()->back();
@@ -71,6 +73,8 @@ class BackendController extends BaseController
         ];
 
         if ($db->table('enrollment')->insert($qurey)) {
+            $query2 = ['head' => 'New Enrollment', 'body' => 'You received now enrollment for ' . $name . '.',];
+            $db->table('notification')->insert($query2);
             return redirect()->to('/thankyou')->with('success', 'Application submitted Successfully!!!');
         } else {
             return redirect()->back();

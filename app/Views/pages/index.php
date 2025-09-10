@@ -48,7 +48,7 @@
             </div>
         </section>
         <!-- about -->
-        <section class="container py-50 px-20">
+        <section class="container-fluid py-50 px-5">
             <div class="text-center">
                 <h2 class="section_title">Welcome to <span class="text-theme">New Wisdom Academy</span></h2>
                 <p class="section_desc">
@@ -194,13 +194,13 @@
                             <tr class="bg-theme text-white fw-bold">
                                 <th colspan="7">
                                     <div class="d-inline-flex col-12 justify-content-between">
-                                        <button type="button" class="btn text-white" onclick="getMonth('prev')" title="Previous Month">
+                                        <button type="button" class="btn text-white" onclick="getCalender('prev')" title="Previous Month">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#ffffff" height="1rem">
                                                 <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
                                             </svg>
                                         </button>
                                         <h4 data-month="" class="mt-2"></h4>
-                                        <button type="button" class="btn text-white" onclick="getMonth('next')" title="Next Month">
+                                        <button type="button" class="btn text-white" onclick="getCalender('next')" title="Next Month">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#ffffff" height="1rem">
                                                 <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                                             </svg>
@@ -275,7 +275,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div data-events="" class="py-4 px-2 text-secondary"></div>
                 </div>
                 <!-- notice list -->
                 <div class="col-12 col-md-6 col-lg-7 ps-md-5">

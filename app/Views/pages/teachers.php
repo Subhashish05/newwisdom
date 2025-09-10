@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="<?php echo base_url('/assets/img/favicon.ico') ?>" type="image/x-icon">
 
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>" as="style">
+    <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>" as="style">
     <link rel="stylesheet" href="<?php echo base_url('/assets/css/bootstrap-grid.min.css') ?>">
     <link rel="preload" href="<?php echo base_url('/assets/css/style.css') ?>" as="style">
